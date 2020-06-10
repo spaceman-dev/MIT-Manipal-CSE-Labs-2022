@@ -1,0 +1,160 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET, DATA, READONLY
+    2 00000000                 EXPORT           __Vectors
+    3 00000000         __Vectors
+    4 00000000 10001000        DCD              0x10001000
+    5 00000004 00000000        DCD              Reset_Handler
+    6 00000008                 ALIGN
+    7 00000008                 AREA             mycode, CODE, READONLY
+    8 00000000                 ENTRY
+    9 00000000                 EXPORT           Reset_Handler
+   10 00000000         Reset_Handler
+   11 00000000 480C            LDR              R0, =Input
+   12 00000002 490D            LDR              R1, =Result
+   13 00000004 6802            LDR              R2, [R0]
+   14 00000006 F000 F802       BL               FACT
+   15 0000000A 600A            STR              R2, [R1]
+   16 0000000C         HERE
+   17 0000000C E7FE            B                HERE
+   18 0000000E B508    FACT    PUSH{R3,         LR}
+   19 00000010 4613            MOV              R3, R2
+   20 00000012 2A00            CMP              R2, #0
+   21 00000014 D102            BNE              DOWN
+   22 00000016 F04F 0201       MOV              R2, #1
+   23 0000001A E006            B                DOWN1
+   24 0000001C F1A2 0201 
+                       DOWN    SUB              R2, #1
+   25 00000020 F7FF FFF5       BL               FACT
+   26 00000024 461C            MOV              R4, R3
+   27 00000026 FB02 F204       MUL              R2, R4
+   28 0000002A E8BD 4008 
+                       DOWN1   POP{R3,          LR}
+   29 0000002E 4770            BX               LR
+   30 00000030 00000005 
+                       Input   DCD              5
+   31 00000034 00000000 
+              00000000         AREA             mydata, DATA, READWRITE
+   32 00000000 00000000 
+                       Result  DCD              0
+   33 00000004                 END
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=.\prog2_
+recursive_factorial.d -o.\prog2_recursive_factorial.o -IC:\Keil\ARM\RV31\INC -I
+C:\Keil\ARM\CMSIS\Include -IC:\Keil\ARM\Inc\NXP\LPC17xx --predefine="__EVAL SET
+A 1" --list=.\prog2_recursive_factorial.lst prog2_recursive_factorial.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file prog2_recursive_factorial.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 3 in file prog2_recursive_factorial.s
+   Uses
+      At line 2 in file prog2_recursive_factorial.s
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+DOWN 0000001C
+
+Symbol: DOWN
+   Definitions
+      At line 24 in file prog2_recursive_factorial.s
+   Uses
+      At line 21 in file prog2_recursive_factorial.s
+Comment: DOWN used once
+DOWN1 0000002A
+
+Symbol: DOWN1
+   Definitions
+      At line 28 in file prog2_recursive_factorial.s
+   Uses
+      At line 23 in file prog2_recursive_factorial.s
+Comment: DOWN1 used once
+FACT 0000000E
+
+Symbol: FACT
+   Definitions
+      At line 18 in file prog2_recursive_factorial.s
+   Uses
+      At line 14 in file prog2_recursive_factorial.s
+      At line 25 in file prog2_recursive_factorial.s
+
+HERE 0000000C
+
+Symbol: HERE
+   Definitions
+      At line 16 in file prog2_recursive_factorial.s
+   Uses
+      At line 17 in file prog2_recursive_factorial.s
+Comment: HERE used once
+Input 00000030
+
+Symbol: Input
+   Definitions
+      At line 30 in file prog2_recursive_factorial.s
+   Uses
+      At line 11 in file prog2_recursive_factorial.s
+Comment: Input used once
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 10 in file prog2_recursive_factorial.s
+   Uses
+      At line 5 in file prog2_recursive_factorial.s
+      At line 9 in file prog2_recursive_factorial.s
+
+mycode 00000000
+
+Symbol: mycode
+   Definitions
+      At line 7 in file prog2_recursive_factorial.s
+   Uses
+      None
+Comment: mycode unused
+7 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Result 00000000
+
+Symbol: Result
+   Definitions
+      At line 32 in file prog2_recursive_factorial.s
+   Uses
+      At line 12 in file prog2_recursive_factorial.s
+Comment: Result used once
+mydata 00000000
+
+Symbol: mydata
+   Definitions
+      At line 31 in file prog2_recursive_factorial.s
+   Uses
+      None
+Comment: mydata unused
+2 symbols
+344 symbols in table

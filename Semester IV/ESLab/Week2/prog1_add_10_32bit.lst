@@ -1,0 +1,157 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET, DATA, READONLY
+    2 00000000                 EXPORT           __Vectors
+    3 00000000         __Vectors
+    4 00000000 40001000        DCD              0X40001000
+    5 00000004 00000000        DCD              Reset_Handler
+    6 00000008                 ALIGN
+    7 00000008                 AREA             mycode, CODE, READONLY
+    8 00000000                 ENTRY
+    9 00000000                 EXPORT           Reset_Handler
+   10 00000000         Reset_Handler
+   11 00000000 4815            LDR              R0,=SRC
+   12 00000002 4D16            LDR              R5,=DST
+   13 00000004 F04F 0100       LDR              R1,=0
+   14 00000008 F04F 030A       MOV              R3,#10
+   15 0000000C F850 2B04 
+                       UP      LDR              R2,[R0],#4
+   16 00000010 1909            ADDS             R1,R4
+   17 00000012 F144 0400       ADC              R4,#0
+   18 00000016 F04F 0400       MOV              R4,#0
+   19 0000001A 1889            ADDS             R1,R2
+   20 0000001C F144 0400       ADC              R4,#0
+   21 00000020 3B01            SUBS             R3, #1
+   22 00000022 D1F3            BNE              UP
+   23 00000024 602C            STR              R4,[R5]
+   24 00000026 6069            STR              R1,[R5,#4]
+   25 00000028         here
+   26 00000028 E7FE            B                here
+   27 0000002A 00 00 00000001 
+              00000002 
+              00000003 
+              00000004 
+              00000005 
+              00000006 
+              00000007 
+              00000008 
+              00000009 
+              0000000A SRC     DCD              1,2,3,4,5,6,7,8,9,10
+   28 00000054         STOP
+   29 00000054 E7FE            B                STOP
+   30 00000056 00 00 00000000 
+              00000000         AREA             mydata, DATA, READWRITE
+   31 00000000 00000000 
+                       DST     DCD              0
+   32 00000004                 END
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=.\prog1_
+add_10_32bit.d -o.\prog1_add_10_32bit.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CM
+SIS\Include -IC:\Keil\ARM\Inc\NXP\LPC17xx --predefine="__EVAL SETA 1" --list=.\
+prog1_add_10_32bit.lst prog1_add_10_32bit.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file prog1_add_10_32bit.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 3 in file prog1_add_10_32bit.s
+   Uses
+      At line 2 in file prog1_add_10_32bit.s
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 10 in file prog1_add_10_32bit.s
+   Uses
+      At line 5 in file prog1_add_10_32bit.s
+      At line 9 in file prog1_add_10_32bit.s
+
+SRC 0000002C
+
+Symbol: SRC
+   Definitions
+      At line 27 in file prog1_add_10_32bit.s
+   Uses
+      At line 11 in file prog1_add_10_32bit.s
+Comment: SRC used once
+STOP 00000054
+
+Symbol: STOP
+   Definitions
+      At line 28 in file prog1_add_10_32bit.s
+   Uses
+      At line 29 in file prog1_add_10_32bit.s
+Comment: STOP used once
+UP 0000000C
+
+Symbol: UP
+   Definitions
+      At line 15 in file prog1_add_10_32bit.s
+   Uses
+      At line 22 in file prog1_add_10_32bit.s
+Comment: UP used once
+here 00000028
+
+Symbol: here
+   Definitions
+      At line 25 in file prog1_add_10_32bit.s
+   Uses
+      At line 26 in file prog1_add_10_32bit.s
+Comment: here used once
+mycode 00000000
+
+Symbol: mycode
+   Definitions
+      At line 7 in file prog1_add_10_32bit.s
+   Uses
+      None
+Comment: mycode unused
+6 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+DST 00000000
+
+Symbol: DST
+   Definitions
+      At line 31 in file prog1_add_10_32bit.s
+   Uses
+      At line 12 in file prog1_add_10_32bit.s
+Comment: DST used once
+mydata 00000000
+
+Symbol: mydata
+   Definitions
+      At line 30 in file prog1_add_10_32bit.s
+   Uses
+      None
+Comment: mydata unused
+2 symbols
+343 symbols in table

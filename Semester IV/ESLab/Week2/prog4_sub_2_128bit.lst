@@ -1,0 +1,155 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET, DATA, READONLY
+    2 00000000                 EXPORT           __Vectors
+    3 00000000         __Vectors
+    4 00000000 40001000        DCD              0X40001000
+    5 00000004 00000000        DCD              Reset_Handler
+    6 00000008                 ALIGN
+    7 00000008                 AREA             mycode, CODE, READONLY
+    8 00000000                 ENTRY
+    9 00000000                 EXPORT           Reset_Handler
+   10 00000000         Reset_Handler
+   11 00000000 4814            LDR              R0,=N1
+   12 00000002 4915            LDR              R1,=N2
+   13 00000004 4C15            LDR              R4,=DST
+   14 00000006 F04F 0504       MOV              R5,#4
+   15 0000000A F04F 36FF       LDR              R6,=0xFFFFFFFF
+   16 0000000E F386 8803       MSR              XPSR,R6
+   17 00000012 F04F 0800       MOV              R8,#0
+   18 00000016 F850 2B04 
+                       UP      LDR              R2,[R0],#4
+   19 0000001A F851 3B04       LDR              R3,[R1],#4
+   20 0000001E EB72 0703       SBCS             R7,R2,R3
+   21 00000022 F844 7B04       STR              R7,[R4],#4
+   22 00000026 3D01            SUBS             R5,1
+   23 00000028 D1F5            BNE              UP
+   24 0000002A F148 0800       ADC              R8,#0
+   25 0000002E F8C4 8000       STR              R8,[R4]
+   26 00000032         STOP
+   27 00000032 E7FE            B                STOP
+   28 00000034 00000001 
+              00000002 
+              00000003 
+              00000004 N1      DCD              1,2,3,4
+   29 00000044 00000001 
+              00000002 
+              00000003 
+              00000004 N2      DCD              1,2,3,4
+   30 00000054 00000000 
+              00000000 
+              00000000         AREA             mydata, DATA, READWRITE
+   31 00000000 00000000 
+                       DST     DCD              0
+   32 00000004                 END
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=.\prog4_
+sub_2_128bit.d -o.\prog4_sub_2_128bit.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CM
+SIS\Include -IC:\Keil\ARM\Inc\NXP\LPC17xx --predefine="__EVAL SETA 1" --list=.\
+prog4_sub_2_128bit.lst prog4_sub_2_128bit.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file prog4_sub_2_128bit.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 3 in file prog4_sub_2_128bit.s
+   Uses
+      At line 2 in file prog4_sub_2_128bit.s
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+N1 00000034
+
+Symbol: N1
+   Definitions
+      At line 28 in file prog4_sub_2_128bit.s
+   Uses
+      At line 11 in file prog4_sub_2_128bit.s
+Comment: N1 used once
+N2 00000044
+
+Symbol: N2
+   Definitions
+      At line 29 in file prog4_sub_2_128bit.s
+   Uses
+      At line 12 in file prog4_sub_2_128bit.s
+Comment: N2 used once
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 10 in file prog4_sub_2_128bit.s
+   Uses
+      At line 5 in file prog4_sub_2_128bit.s
+      At line 9 in file prog4_sub_2_128bit.s
+
+STOP 00000032
+
+Symbol: STOP
+   Definitions
+      At line 26 in file prog4_sub_2_128bit.s
+   Uses
+      At line 27 in file prog4_sub_2_128bit.s
+Comment: STOP used once
+UP 00000016
+
+Symbol: UP
+   Definitions
+      At line 18 in file prog4_sub_2_128bit.s
+   Uses
+      At line 23 in file prog4_sub_2_128bit.s
+Comment: UP used once
+mycode 00000000
+
+Symbol: mycode
+   Definitions
+      At line 7 in file prog4_sub_2_128bit.s
+   Uses
+      None
+Comment: mycode unused
+6 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+DST 00000000
+
+Symbol: DST
+   Definitions
+      At line 31 in file prog4_sub_2_128bit.s
+   Uses
+      At line 13 in file prog4_sub_2_128bit.s
+Comment: DST used once
+mydata 00000000
+
+Symbol: mydata
+   Definitions
+      At line 30 in file prog4_sub_2_128bit.s
+   Uses
+      None
+Comment: mydata unused
+2 symbols
+343 symbols in table

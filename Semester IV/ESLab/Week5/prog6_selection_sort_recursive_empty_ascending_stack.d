@@ -1,0 +1,1 @@
+.\prog6_selection_sort_recursive_empty_ascending_stack.o: prog6_selection_sort_recursive_empty_ascending_stack.s

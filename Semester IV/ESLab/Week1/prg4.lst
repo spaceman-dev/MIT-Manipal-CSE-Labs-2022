@@ -1,0 +1,127 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET, DATA, READONLY
+    2 00000000                 EXPORT           __Vectors
+    3 00000000         __Vectors
+    4 00000000 40001000        DCD              0X40001000
+    5 00000004 00000000        DCD              Reset_Handler
+    6 00000008                 ALIGN
+    7 00000008                 AREA             mycode, CODE, READONLY
+    8 00000000                 ENTRY
+    9 00000000                 EXPORT           Reset_Handler
+   10 00000000         Reset_Handler
+   11 00000000 4806            LDR              R0, =SRC
+   12 00000002 F04F 060A       MOV              R6, #10
+   13 00000006 F04F 0401       LDR              R4, =1
+   14 0000000A         lp
+   15 0000000A 6004            STR              R4, [R0]
+   16 0000000C F104 0401       ADD              R4, #1
+   17 00000010 F100 0004       ADD              R0, #4
+   18 00000014 3E01            SUBS             R6, #1
+   19 00000016 D1F8            BNE              lp
+   20 00000018         ;LDR R5, =2
+   21 00000018         ;LDR R0, =SRC
+   22 00000018         ;STR R5, [R0]
+   23 00000018         ;LDR R3, [R0]
+   24 00000018         ;ADD R3, R3, #4
+   25 00000018         ;STR R3, [R0]
+   26 00000018         STOP
+   27 00000018 E7FE            B                STOP
+   28 0000001A 00 00 00000000  AREA             mydata, DATA, READWRITE
+   29 00000000 00000000 
+              00000001 SRC     DCD              0,1
+   30 00000008                 END
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=.\prg4.d
+ -o.\prg4.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Include -IC:\Keil\ARM\In
+c\NXP\LPC17xx --predefine="__EVAL SETA 1" --list=.\prg4.lst prg4.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file prg4.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 3 in file prg4.s
+   Uses
+      At line 2 in file prg4.s
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 10 in file prg4.s
+   Uses
+      At line 5 in file prg4.s
+      At line 9 in file prg4.s
+
+STOP 00000018
+
+Symbol: STOP
+   Definitions
+      At line 26 in file prg4.s
+   Uses
+      At line 27 in file prg4.s
+Comment: STOP used once
+lp 0000000A
+
+Symbol: lp
+   Definitions
+      At line 14 in file prg4.s
+   Uses
+      At line 19 in file prg4.s
+Comment: lp used once
+mycode 00000000
+
+Symbol: mycode
+   Definitions
+      At line 7 in file prg4.s
+   Uses
+      None
+Comment: mycode unused
+4 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+SRC 00000000
+
+Symbol: SRC
+   Definitions
+      At line 29 in file prg4.s
+   Uses
+      At line 11 in file prg4.s
+Comment: SRC used once
+mydata 00000000
+
+Symbol: mydata
+   Definitions
+      At line 28 in file prg4.s
+   Uses
+      None
+Comment: mydata unused
+2 symbols
+341 symbols in table

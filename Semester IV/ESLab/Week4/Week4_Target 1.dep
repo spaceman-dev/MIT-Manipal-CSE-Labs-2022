@@ -1,0 +1,2 @@
+Dependencies for Project 'Week4', Target 'Target 1': (DO NOT MODIFY !)
+F (.\prg5_mul_16bit_bcd_to_unpacked_bcd.s)(0x5E311939)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx--list .\prg5_mul_16bit_bcd_to_unpacked_bcd.lst --xref -o .\prg5_mul_16bit_bcd_to_unpacked_bcd.o --depend .\prg5_mul_16bit_bcd_to_unpacked_bcd.d)

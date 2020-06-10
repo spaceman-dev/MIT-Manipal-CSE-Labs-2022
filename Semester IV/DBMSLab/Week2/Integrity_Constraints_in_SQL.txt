@@ -1,0 +1,93 @@
+Lab Exercises:
+
+CREATE TABLE Employee(
+EmpNo NUMBER(5),
+EmpName VARCHAR(20) NOT NULL,
+Gender CHAR(1) NOT NULL,
+Salary NUMBER(10,2) NOT NULL,
+Address VARCHAR(50)  NOT NULL,
+DNo NUMBER(5),
+PRIMARY KEY(EmpName),
+CHECK(Gender = 'M' OR Gender = 'F'));
+
+CREATE TABLE Department(
+DeptNo NUMBER(5),
+DeptName VARCHAR(20) UNIQUE NOT NULL,
+Location VARCHAR(50),
+PRIMARY KEY(DeptNo));
+
+ALTER TABLE Employee ADD CONSTRAINT ABC FOREIGN KEY(DNo) REFERENCES Department(DeptNo);
+
+INSERT INTO Department(DeptNo, DeptName, Location) VALUES(11001, 'Worker', 'Hyderabad');
+INSERT INTO Department(DeptNo, DeptName, Location) VALUES(11002, 'Puli', 'Manipal');
+INSERT INTO Employee(EmpNo, EmpName, Gender, Salary, Address, DNo) VALUES(00001, 'Prachothan', 'M', 10001, 'Hyderabad-60', 11001);
+INSERT INTO Employee(EmpNo, EmpName, Gender, Salary, Address, DNo) VALUES(00002, 'GP', 'M', 110000, 'Manipal-104', 11002);
+
+INSERT INTO Department(DeptNo, DeptName, Location) VALUES(11001, 'Morg', 'Hyderabad');
+INSERT INTO Department(DeptNo, DeptName, Location) VALUES(11002, 'Pulihora', 'Manipal');
+INSERT INTO Employee(EmpNo, EmpName, Gender, Salary, Address, DNo) VALUES(00001, 'Prachothan', 'M', 500, 'Hyderabad-60', 11001);
+INSERT INTO Employee(EmpNo, EmpName, Gender, Salary, Address, DNo) VALUES(00002, 'GP', 'M', 1000, 'Manipal-104', 11002);
+
+ALTER TABLE Employee DROP CONSTRAINT ABC;
+ALTER TABLE Employee ADD CONSTRAINT FK_DNo FOREIGN KEY(DNo) REFERENCES Department(DeptNo) ON DELETE CASCADE;
+
+ALTER TABLE Employee MODIFY(Salary DEFAULT 10000);
+
+
+SELECT name,dept_name FROM student;
+
+SELECT name FROM instructor where dept_name='Comp. Sci.';
+
+SELECT title FROM course WHERE dept_name='Comp. Sci.' AND credits=3;
+
+SELECT takes.course_id, title FROM takes, course WHERE ID=12345;
+
+SELECT name FROM instructor WHERE salary>=40000 and salary<=90000;
+
+SELECT  instructor.ID FROM instructor WHERE id NOT IN (SELECT ID FROM teaches);
+
+SELECT name, title, takes.year FROM student, section, course, takes WHERE room_number=3128 and course.course_id = section.course_id and course.course_id = takes.course_id and takes.id = student.id and takes.year = section.year and takes.sec_id = section.sec_id and section.semester = takes.semester;
+
+SELECT name, course.course_id, course.title as c_name FROM student, section, course, takes WHERE takes.year=2015 and course.course_id = section.course_id and course.course_id = takes.course_id and takes.id = student.id and takes.year = section.year and takes.sec_id = section.sec_id and section.semester = takes.semester;
+
+SELECT name, salary as inst_salary FROM instructor where salary > (SELECT MIN(salary) FROM instructor WHERE dept_name ='Comp. Sci.' );
+
+SELECT name,dept_name FROM instructor WHERE dept_name LIKE '%ch%';
+
+SELECT name, LENGTH(name) FROM student;
+
+SELECT dept_name,SUBSTR(dept_name,3,3) FROM department;
+
+SELECT UPPER(name) FROM instructor;
+
+SELECT NVL(grade,'F') FROM takes;
+
+SELECT salary,round(salary/3,-2) FROM instructor;
+
+ALTER TABLE employee ADD DOB DATE;
+UPDATE employee SET DOB='12-Jan-1998';
+
+SELECT EmpName, to_char(DOB,'DD-MON-YYYY') FROM employee;
+SELECT EmpName, to_char(DOB,'DD-MON-YY') FROM employee;
+SELECT EmpName, to_char(DOB,'DD-MM-YY') FROM employee;
+
+SELECT EmpName, to_char(DOB, 'YEAR') FROM employee;
+
+SELECT EmpName, to_char(DOB, 'DAY') FROM employee;
+
+SELECT EmpName, to_char(DOB, 'MONTH') FROM employee;
+
+SELECT Last_day(DOB) FROM employee WHERE EmpName = 'Prachothan';
+
+SELECT EmpName, (2020-extract(year from dob)) FROM employee;
+
+SELECT Next_day(Add_Months(DOB, 720), 'Saturday') FROM employee;
+
+SELECT EmpName FROM employee WHERE extract(year FROM DOB) = 1998;
+
+SELECT EmpName FROM employee WHERE extract(year FROM DOB) BETWEEN 1997 AND 1999;
+
+SELECT EmpName FROM employee WHERE (extract(year FROM DOB)+60) = 2058;
+
+
+

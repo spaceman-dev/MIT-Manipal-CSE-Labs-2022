@@ -1,0 +1,7 @@
+1 - Itrative Factorial
+2 - Recursive Factorial
+3 - Linear Search
+4 - Bubble Sort
+5 - Selection Sort
+6 - Selection Sort using Empty Ascending Stack
+7 - Selection Sort using Full Descending Stack

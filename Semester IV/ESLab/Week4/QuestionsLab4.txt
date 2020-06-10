@@ -1,0 +1,5 @@
+1. Convert a packed 32 bit BCD number to a Hexadecimal number.
+2. Convert a 16 bit Hexadecimal number to a packed BCD number.
+3. Unpack a 32 bit BCD number and convert it to 8 separate ASCII numbers.
+4. 32bit BCD numbers add them and store in packed BCD form.
+5. Multiply 2 16bit BCD numbers and store result in packed BCD form

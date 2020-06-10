@@ -1,0 +1,2 @@
+Dependencies for Project 'Week3', Target 'Target 1': (DO NOT MODIFY !)
+F (.\prog7_fibonacci_series.s)(0x5E27D18C)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx--list .\prog7_fibonacci_series.lst --xref -o .\prog7_fibonacci_series.o --depend .\prog7_fibonacci_series.d)

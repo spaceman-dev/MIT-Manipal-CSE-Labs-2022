@@ -1,0 +1,8 @@
+--cpu Cortex-M3
+".\startup_lpc17xx.o"
+".\system_lpc17xx.o"
+".\led.o"
+--strict --scatter ".\Week6.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Week6.map" -o .\Week6.axf

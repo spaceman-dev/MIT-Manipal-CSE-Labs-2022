@@ -1,0 +1,5 @@
+--cpu Cortex-M3
+".\prg5_mul_16bit_bcd_to_unpacked_bcd.o"
+--ro-base 0x00000000 --entry 0x00000000 --rw-base 0x10000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Week4.map" -o .\Week4.axf

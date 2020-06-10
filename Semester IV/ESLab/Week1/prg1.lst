@@ -1,0 +1,129 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET, DATA, READONLY
+    2 00000000                 EXPORT           __Vectors
+    3 00000000         __Vectors
+    4 00000000 40001000        DCD              0X40001000
+    5 00000004 00000000        DCD              Reset_Handler
+    6 00000008                 ALIGN
+    7 00000008                 AREA             mycode, CODE, READONLY
+    8 00000000                 ENTRY
+    9 00000000                 EXPORT           Reset_Handler
+   10 00000000         Reset_Handler
+   11 00000000 4803            LDR              R0, =SRC    ;Load address of SR
+                                                            C into R0
+   12 00000002 4904            LDR              R1, =DST    ;Load the address o
+                                                            f DST onto R1
+   13 00000004 6803            LDR              R3, [R0]    ;Load data pointed 
+                                                            by R0 into R3
+   14 00000006 600B            STR              R3, [R1]    ;Store data from R3
+                                                             into the address p
+                                                            ointed by R1
+   15 00000008         STOP
+   16 00000008 E7FE            B                STOP        ;Be there
+   17 0000000A 00 00 00000008 
+                       SRC     DCD              8           ;SRC location in da
+                                                            ta memory
+   18 00000010         
+   19 00000010 00000000 
+              00000000         AREA             mydata, DATA, READWRITE
+   20 00000000         
+   21 00000000         
+   22 00000000 00000000 
+                       DST     DCD              0           ;DST location in Da
+                                                            ta Memory
+   23 00000004                 END
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=.\prg1.d
+ -o.\prg1.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Include -IC:\Keil\ARM\In
+c\NXP\LPC17xx --predefine="__EVAL SETA 1" --list=.\prg1.lst prg1.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file prg1.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 3 in file prg1.s
+   Uses
+      At line 2 in file prg1.s
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 10 in file prg1.s
+   Uses
+      At line 5 in file prg1.s
+      At line 9 in file prg1.s
+
+SRC 0000000C
+
+Symbol: SRC
+   Definitions
+      At line 17 in file prg1.s
+   Uses
+      At line 11 in file prg1.s
+Comment: SRC used once
+STOP 00000008
+
+Symbol: STOP
+   Definitions
+      At line 15 in file prg1.s
+   Uses
+      At line 16 in file prg1.s
+Comment: STOP used once
+mycode 00000000
+
+Symbol: mycode
+   Definitions
+      At line 7 in file prg1.s
+   Uses
+      None
+Comment: mycode unused
+4 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+DST 00000000
+
+Symbol: DST
+   Definitions
+      At line 22 in file prg1.s
+   Uses
+      At line 12 in file prg1.s
+Comment: DST used once
+mydata 00000000
+
+Symbol: mydata
+   Definitions
+      At line 19 in file prg1.s
+   Uses
+      None
+Comment: mydata unused
+2 symbols
+341 symbols in table

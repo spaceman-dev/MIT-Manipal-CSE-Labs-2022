@@ -1,0 +1,2 @@
+Dependencies for Project 'Week5', Target 'Target 1': (DO NOT MODIFY !)
+F (.\prog5_selection_sort.s)(0x5E3A46AE)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx--list .\prog5_selection_sort.lst --xref -o .\prog5_selection_sort.o --depend .\prog5_selection_sort.d)

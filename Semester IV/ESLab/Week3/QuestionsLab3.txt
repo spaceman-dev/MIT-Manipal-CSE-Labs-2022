@@ -1,0 +1,7 @@
+1. Multiply two 32 bit nos..
+2. Division by repeatitive  subtraction.
+3. Sum of n natural numbers using MLA.
+4. Find GCD, LCM of two 8 bit nos.
+5. Convert hexadecimal no. to unpacked ascii no..
+6. Convert 32 bit BCD no. in unpacked form
+7. Generate Fibonacci series.

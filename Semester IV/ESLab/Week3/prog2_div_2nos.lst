@@ -1,0 +1,157 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET, DATA, READONLY
+    2 00000000                 EXPORT           __Vectors
+    3 00000000         __Vectors
+    4 00000000 40001000        DCD              0X40001000
+    5 00000004 00000000        DCD              Reset_Handler
+    6 00000008                 ALIGN
+    7 00000008                 AREA             mycode, CODE, READONLY
+    8 00000000                 ENTRY
+    9 00000000                 EXPORT           Reset_Handler
+   10 00000000         Reset_Handler
+   11 00000000 4E0A            LDR              R6, =RESULT
+   12 00000002 F04F 0400       MOV              R4, #0
+   13 00000006 480A            LDR              R0, =VALUE1
+   14 00000008 6802            LDR              R2, [R0]
+   15 0000000A 490A            LDR              R1, =VALUE2
+   16 0000000C 680B            LDR              R3, [R1]
+   17 0000000E 429A    UP      CMP              R2, R3
+   18 00000010 D304            BCC              STORE
+   19 00000012 EBA2 0203       SUB              R2, R3
+   20 00000016 F104 0401       ADD              R4, #1
+   21 0000001A E7F8            B                UP
+   22 0000001C F846 4B04 
+                       STORE   STR              R4, [R6], #4
+   23 00000020 6032            STR              R2, [R6]
+   24 00000022         STOP
+   25 00000022 E7FE            B                STOP
+   26 00000024 0000000A 
+                       VALUE1  DCD              10
+   27 00000028 00000002 
+                       VALUE2  DCD              2
+   28 0000002C 00000000 
+              00000000 
+              00000000         AREA             mydata, DATA, READWRITE
+   29 00000000 00000000 
+                       RESULT  DCD              0
+   30 00000004                 END
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=.\prog2_
+div_2nos.d -o.\prog2_div_2nos.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Incl
+ude -IC:\Keil\ARM\Inc\NXP\LPC17xx --predefine="__EVAL SETA 1" --list=.\prog2_di
+v_2nos.lst prog2_div_2nos.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file prog2_div_2nos.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 3 in file prog2_div_2nos.s
+   Uses
+      At line 2 in file prog2_div_2nos.s
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 10 in file prog2_div_2nos.s
+   Uses
+      At line 5 in file prog2_div_2nos.s
+      At line 9 in file prog2_div_2nos.s
+
+STOP 00000022
+
+Symbol: STOP
+   Definitions
+      At line 24 in file prog2_div_2nos.s
+   Uses
+      At line 25 in file prog2_div_2nos.s
+Comment: STOP used once
+STORE 0000001C
+
+Symbol: STORE
+   Definitions
+      At line 22 in file prog2_div_2nos.s
+   Uses
+      At line 18 in file prog2_div_2nos.s
+Comment: STORE used once
+UP 0000000E
+
+Symbol: UP
+   Definitions
+      At line 17 in file prog2_div_2nos.s
+   Uses
+      At line 21 in file prog2_div_2nos.s
+Comment: UP used once
+VALUE1 00000024
+
+Symbol: VALUE1
+   Definitions
+      At line 26 in file prog2_div_2nos.s
+   Uses
+      At line 13 in file prog2_div_2nos.s
+Comment: VALUE1 used once
+VALUE2 00000028
+
+Symbol: VALUE2
+   Definitions
+      At line 27 in file prog2_div_2nos.s
+   Uses
+      At line 15 in file prog2_div_2nos.s
+Comment: VALUE2 used once
+mycode 00000000
+
+Symbol: mycode
+   Definitions
+      At line 7 in file prog2_div_2nos.s
+   Uses
+      None
+Comment: mycode unused
+7 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESULT 00000000
+
+Symbol: RESULT
+   Definitions
+      At line 29 in file prog2_div_2nos.s
+   Uses
+      At line 11 in file prog2_div_2nos.s
+Comment: RESULT used once
+mydata 00000000
+
+Symbol: mydata
+   Definitions
+      At line 28 in file prog2_div_2nos.s
+   Uses
+      None
+Comment: mydata unused
+2 symbols
+344 symbols in table

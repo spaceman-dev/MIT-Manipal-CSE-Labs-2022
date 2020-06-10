@@ -1,0 +1,75 @@
+CREATE TABLE Student(
+reg_no NUMBER(5),
+stu_name VARCHAR(20),
+stu_age NUMBER(5),
+stu_dob DATE,
+subject1_marks NUMBER(4,2),
+subject2_marks NUMBER(4,2),
+subject3_marks NUMBER(4,1));
+
+INSERT INTO Student VALUES(101, 'AAA', 16, '03-jul-88', 80, 90, 98);
+
+ALTER TABLE Student ADD(Gender CHAR(5));
+
+ALTER TABLE Student DROP COLUMN Gender;
+
+ALTER TABLE Student Modify(stu_age NUMBER(3));
+
+RENAME Student TO Students;
+RENAME Students TO Student;
+
+TRUNCATE TABLE Student;
+
+DROP TABLE Student;
+
+
+SELECT * FROM Student;
+
+SELECT stu_age student_age FROM Student;
+
+SELECT subject1_marks + subject2_marks + subject3_marks total_marks FROM Student;
+
+INSERT INTO Student(reg_no, stu_name) VALUES(102, 'KRISH');
+
+DELETE FROM Student WHERE reg_no = 102;
+
+DELETE FROM Student;
+
+UPDATE Student SET stu_name = 'MANAV';
+
+UPDATE Student SET stu_name = 'YADAV' WHERE reg_no = 101;
+
+
+
+//LAB EXERCISES
+
+CREATE TABLE Employee(
+emp_no NUMBER(10),
+emp_name VARCHAR(20),
+emp_address VARCHAR(50));
+
+INSERT INTO Employee(emp_no, emp_name, emp_address) VALUES(1,'AB','Manipal');
+INSERT INTO Employee(emp_no, emp_name, emp_address) VALUES(2,'ABC','Mangalore');
+INSERT INTO Employee(emp_no, emp_name, emp_address) VALUES(3,'ABCD','Udupi');
+INSERT INTO Employee(emp_no, emp_name, emp_address) VALUES(4,'ABCDE','Manipal');
+INSERT INTO Employee(emp_no, emp_name, emp_address) VALUES(5,'ABCDEF','Mangalore');
+
+SELECT emp_name FROM Employee;
+
+SELECT emp_name FROM Employee WHERE emp_address = 'Manipal';
+
+ALTER TABLE Employee ADD(salary NUMERIC(10,2));
+
+UPDATE Employee SET salary = 100 WHERE emp_no = 1;
+UPDATE Employee SET salary = 200 WHERE emp_no = 2;
+UPDATE Employee SET salary = 300 WHERE emp_no = 3;
+UPDATE Employee SET salary = 400 WHERE emp_no = 4;
+UPDATE Employee SET salary = 500 WHERE emp_no = 5;
+
+DESCRIBE Employee;
+
+DELETE FROM Employee WHERE emp_address = 'Mangalore';
+
+RENAME Employee to Employees;
+
+DROP TABLE Employees;

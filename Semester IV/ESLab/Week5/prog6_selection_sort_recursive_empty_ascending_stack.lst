@@ -1,0 +1,187 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET, DATA, READONLY
+    2 00000000                 EXPORT           __Vectors
+    3 00000000         __Vectors
+    4 00000000 10001000        DCD              0x10001000
+    5 00000004 00000000        DCD              Reset_Handler
+    6 00000008                 ALIGN
+    7 00000008                 AREA             mycode, CODE, READONLY
+    8 00000000                 ENTRY
+    9 00000000                 EXPORT           Reset_Handler
+   10 00000000         Reset_Handler
+   11 00000000 F04F 0003       MOV              R0, #3
+   12 00000004 F04F 0105       MOV              R1, #5
+   13 00000008 F04F 0204       MOV              R2, #4
+   14 0000000C F04F 0301       MOV              R3, #1
+   15 00000010 F04F 0402       MOV              R4, #2
+   16 00000014 E8AD 001F       STM              R13!, {R0-R4}
+   17 00000018 F04F 0504       MOV              R5, #4
+   18 0000001C F04F 0601       MOV              R6, #1
+   19 00000020 46EC            MOV              R12, R13
+   20 00000022 4662            MOV              R2, R12
+   21 00000024 42AE    ABOVE   CMP              R6, R5
+   22 00000026 D810            BHI              LAST
+   23 00000028 4617            MOV              R7, R2
+   24 0000002A 4692            MOV              R10, R2
+   25 0000002C F04F 0805       MOV              R8, #5
+   26 00000030 F106 0901       ADD              R9, R6, #1
+   27 00000034 45C1    UP      CMP              R9, R8
+   28 00000036 D8FF            BHI              L2
+   29 00000038 6818    L2      LDR              R0, [R3]
+   30 0000003A 6811            LDR              R1, [R2]
+   31 0000003C 6010            STR              R0, [R2]
+   32 0000003E 6039            STR              R1, [R7]
+   33 00000040 F102 0204       ADD              R2, #4
+   34 00000044 F105 0504       ADD              R5, #4
+   35 00000048 E7EC            B                ABOVE
+   36 0000004A         LAST
+   37 0000004A E7FE            B                LAST
+   38 0000004C 00000010 
+              00000005 
+              00000033 
+              00000024 
+              00000056 
+              00000077 
+              00000021 
+              00000004 
+              00000087 
+              00000001 List    DCD              0X10, 0X5, 0X33, 0X24, 0X56, 0X
+77, 0X21, 0X4, 0X87, 0X1
+   39 00000074                 AREA             mydata, DATA, READWRITE
+   40 00000000 00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00    Result  DCW              0,0,0,0,0,0,0,0,0,0
+   41 00000014                 END
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=.\prog6_
+selection_sort_recursive_empty_ascending_stack.d -o.\prog6_selection_sort_recur
+
+
+
+ARM Macro Assembler    Page 2 
+
+
+sive_empty_ascending_stack.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Include
+ -IC:\Keil\ARM\Inc\NXP\LPC17xx --predefine="__EVAL SETA 1" --list=.\prog6_selec
+tion_sort_recursive_empty_ascending_stack.lst prog6_selection_sort_recursive_em
+pty_ascending_stack.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file prog6_selection_sort_recursive_empty_ascending_stack.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 3 in file prog6_selection_sort_recursive_empty_ascending_stack.s
+   Uses
+      At line 2 in file prog6_selection_sort_recursive_empty_ascending_stack.s
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+ABOVE 00000024
+
+Symbol: ABOVE
+   Definitions
+      At line 21 in file prog6_selection_sort_recursive_empty_ascending_stack.s
+   Uses
+      At line 35 in file prog6_selection_sort_recursive_empty_ascending_stack.s
+Comment: ABOVE used once
+L2 00000038
+
+Symbol: L2
+   Definitions
+      At line 29 in file prog6_selection_sort_recursive_empty_ascending_stack.s
+   Uses
+      At line 28 in file prog6_selection_sort_recursive_empty_ascending_stack.s
+Comment: L2 used once
+LAST 0000004A
+
+Symbol: LAST
+   Definitions
+      At line 36 in file prog6_selection_sort_recursive_empty_ascending_stack.s
+   Uses
+      At line 22 in file prog6_selection_sort_recursive_empty_ascending_stack.s
+      At line 37 in file prog6_selection_sort_recursive_empty_ascending_stack.s
+
+List 0000004C
+
+Symbol: List
+   Definitions
+      At line 38 in file prog6_selection_sort_recursive_empty_ascending_stack.s
+   Uses
+      None
+Comment: List unused
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 10 in file prog6_selection_sort_recursive_empty_ascending_stack.s
+   Uses
+      At line 5 in file prog6_selection_sort_recursive_empty_ascending_stack.s
+      At line 9 in file prog6_selection_sort_recursive_empty_ascending_stack.s
+
+UP 00000034
+
+Symbol: UP
+   Definitions
+      At line 27 in file prog6_selection_sort_recursive_empty_ascending_stack.s
+   Uses
+      None
+Comment: UP unused
+mycode 00000000
+
+Symbol: mycode
+   Definitions
+      At line 7 in file prog6_selection_sort_recursive_empty_ascending_stack.s
+   Uses
+      None
+Comment: mycode unused
+7 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Result 00000000
+
+Symbol: Result
+   Definitions
+      At line 40 in file prog6_selection_sort_recursive_empty_ascending_stack.s
+   Uses
+      None
+Comment: Result unused
+mydata 00000000
+
+Symbol: mydata
+   Definitions
+      At line 39 in file prog6_selection_sort_recursive_empty_ascending_stack.s
+   Uses
+      None
+Comment: mydata unused
+2 symbols
+342 symbols in table

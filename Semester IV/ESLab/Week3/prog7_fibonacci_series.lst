@@ -1,0 +1,125 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET, DATA, READONLY
+    2 00000000                 EXPORT           __Vectors
+    3 00000000         __Vectors
+    4 00000000 10001000        DCD              0x10001000
+    5 00000004 00000000        DCD              Reset_Handler
+    6 00000008                 ALIGN
+    7 00000008                 AREA             mycode, CODE, READONLY
+    8 00000000                 ENTRY
+    9 00000000                 EXPORT           Reset_Handler
+   10 00000000         Reset_Handler
+   11 00000000 4808            LDR              R0, =FIB
+   12 00000002 F04F 0100       MOV              R1, #0
+   13 00000006 F04F 0201       MOV              R2, #1
+   14 0000000A F04F 0308       MOV              R3, #8
+   15 0000000E F800 1B01       STRB             R1, [R0], #1
+   16 00000012 F800 2B01 
+                       UP      STRB             R2, [R0], #1
+   17 00000016 4614            MOV              R4, R2
+   18 00000018 440A            ADD              R2, R1
+   19 0000001A 4621            MOV              R1, R4
+   20 0000001C 3B01            SUBS             R3, #1
+   21 0000001E D1F8            BNE              UP
+   22 00000020         STOP
+   23 00000020 E7FE            B                STOP
+   24 00000022 00 00 00000000  AREA             mydata, DATA, READWRITE
+   25 00000000 00000000 
+                       FIB     DCD              0
+   26 00000004                 END
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=.\prog7_
+fibonacci_series.d -o.\prog7_fibonacci_series.o -IC:\Keil\ARM\RV31\INC -IC:\Kei
+l\ARM\CMSIS\Include -IC:\Keil\ARM\Inc\NXP\LPC17xx --predefine="__EVAL SETA 1" -
+-list=.\prog7_fibonacci_series.lst prog7_fibonacci_series.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file prog7_fibonacci_series.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 3 in file prog7_fibonacci_series.s
+   Uses
+      At line 2 in file prog7_fibonacci_series.s
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 10 in file prog7_fibonacci_series.s
+   Uses
+      At line 5 in file prog7_fibonacci_series.s
+      At line 9 in file prog7_fibonacci_series.s
+
+STOP 00000020
+
+Symbol: STOP
+   Definitions
+      At line 22 in file prog7_fibonacci_series.s
+   Uses
+      At line 23 in file prog7_fibonacci_series.s
+Comment: STOP used once
+UP 00000012
+
+Symbol: UP
+   Definitions
+      At line 16 in file prog7_fibonacci_series.s
+   Uses
+      At line 21 in file prog7_fibonacci_series.s
+Comment: UP used once
+mycode 00000000
+
+Symbol: mycode
+   Definitions
+      At line 7 in file prog7_fibonacci_series.s
+   Uses
+      None
+Comment: mycode unused
+4 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+FIB 00000000
+
+Symbol: FIB
+   Definitions
+      At line 25 in file prog7_fibonacci_series.s
+   Uses
+      At line 11 in file prog7_fibonacci_series.s
+Comment: FIB used once
+mydata 00000000
+
+Symbol: mydata
+   Definitions
+      At line 24 in file prog7_fibonacci_series.s
+   Uses
+      None
+Comment: mydata unused
+2 symbols
+341 symbols in table

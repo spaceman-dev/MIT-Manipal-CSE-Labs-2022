@@ -1,0 +1,8 @@
+--cpu Cortex-M3
+".\startup_lpc17xx.o"
+".\system_lpc17xx.o"
+".\prog5_7seg_hex_updown_counter.o"
+--strict --scatter ".\Week8.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Week8.map" -o .\Week8.axf

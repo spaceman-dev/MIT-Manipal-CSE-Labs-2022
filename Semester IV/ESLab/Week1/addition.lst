@@ -1,0 +1,82 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET, DATA, READONLY
+    2 00000000                 EXPORT           __Vectors
+    3 00000000         __Vectors
+    4 00000000 10001000        DCD              0X10001000
+    5 00000004 00000000        DCD              Reset_Handler
+    6 00000008                 ALIGN
+    7 00000008                 AREA             mycode, CODE, READONLY
+    8 00000000                 ENTRY
+    9 00000000                 EXPORT           Reset_Handler
+   10 00000000         Reset_Handler
+   11 00000000 F04F 000A       MOV              R0,#10
+   12 00000004 F04F 0103       MOV              R1,#3
+   13 00000008 EB00 0201       ADD              R2,R0,R1
+   14 0000000C         STOP
+   15 0000000C E7FE            B                STOP
+                       
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=.\additi
+on.d -o.\addition.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Include -IC:\Kei
+l\ARM\Inc\NXP\LPC17xx --predefine="__EVAL SETA 1" --list=.\addition.lst Additio
+n.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file Addition.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 3 in file Addition.s
+   Uses
+      At line 2 in file Addition.s
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 10 in file Addition.s
+   Uses
+      At line 5 in file Addition.s
+      At line 9 in file Addition.s
+
+STOP 0000000C
+
+Symbol: STOP
+   Definitions
+      At line 14 in file Addition.s
+   Uses
+      At line 15 in file Addition.s
+Comment: STOP used once
+mycode 00000000
+
+Symbol: mycode
+   Definitions
+      At line 7 in file Addition.s
+   Uses
+      None
+Comment: mycode unused
+3 symbols
+336 symbols in table

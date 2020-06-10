@@ -1,0 +1,7 @@
+Lab7
+1. Display [4321] 
+4. Up/down counter with switch
+5. Hexadecimal up/down counter with switch key
+Lab8
+1. Display Name on lcd
+2. Display Random Number Between 1-6 with switch key

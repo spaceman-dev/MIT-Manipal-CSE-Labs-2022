@@ -1,0 +1,2 @@
+Dependencies for Project 'Week2', Target 'Target 1': (DO NOT MODIFY !)
+F (.\prog4_sub_2_128bit.s)(0x5E1EA282)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx--list .\prog4_sub_2_128bit.lst --xref -o .\prog4_sub_2_128bit.o --depend .\prog4_sub_2_128bit.d)

@@ -1,0 +1,2 @@
+1 - Embedded C Program to display 8 bit binary up counter on the LEDs
+2 - Embedded C Program to read a key and display an 8 bit up/down counter on the LEDs

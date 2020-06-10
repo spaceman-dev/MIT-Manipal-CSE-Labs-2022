@@ -1,0 +1,110 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET, DATA, READONLY
+    2 00000000                 EXPORT           __Vectors
+    3 00000000         __Vectors
+    4 00000000 40001000        DCD              0X40001000
+    5 00000004 00000000        DCD              Reset_Handler
+    6 00000008                 ALIGN
+    7 00000008                 AREA             mycode, CODE, READONLY
+    8 00000000                 ENTRY
+    9 00000000                 EXPORT           Reset_Handler
+   10 00000000         Reset_Handler
+   11 00000000 F04F 0502       LDR              R5, =2
+   12 00000004 4803            LDR              R0, =SRC
+   13 00000006 6005            STR              R5, [R0]
+   14 00000008 6803            LDR              R3, [R0]
+   15 0000000A F103 0304       ADD              R3, R3, #4
+   16 0000000E 6003            STR              R3, [R0]
+   17 00000010         STOP
+   18 00000010 E7FE            B                STOP
+   19 00000012 00 00 00000000  AREA             mydata, DATA, READWRITE
+   20 00000000 00000000 
+              00000001 SRC     DCD              0,1
+   21 00000008                 END
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=.\prg3.d
+ -o.\prg3.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Include -IC:\Keil\ARM\In
+c\NXP\LPC17xx --predefine="__EVAL SETA 1" --list=.\prg3.lst prg3.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file prg3.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 3 in file prg3.s
+   Uses
+      At line 2 in file prg3.s
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 10 in file prg3.s
+   Uses
+      At line 5 in file prg3.s
+      At line 9 in file prg3.s
+
+STOP 00000010
+
+Symbol: STOP
+   Definitions
+      At line 17 in file prg3.s
+   Uses
+      At line 18 in file prg3.s
+Comment: STOP used once
+mycode 00000000
+
+Symbol: mycode
+   Definitions
+      At line 7 in file prg3.s
+   Uses
+      None
+Comment: mycode unused
+3 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+SRC 00000000
+
+Symbol: SRC
+   Definitions
+      At line 20 in file prg3.s
+   Uses
+      At line 12 in file prg3.s
+Comment: SRC used once
+mydata 00000000
+
+Symbol: mydata
+   Definitions
+      At line 19 in file prg3.s
+   Uses
+      None
+Comment: mydata unused
+2 symbols
+340 symbols in table

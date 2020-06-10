@@ -1,0 +1,151 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET, DATA, READONLY
+    2 00000000                 EXPORT           __Vectors
+    3 00000000         __Vectors
+    4 00000000 10001000        dcd              0x10001000
+    5 00000004 00000000        dcd              Reset_Handler
+    6 00000008                 ALIGN
+    7 00000008                 AREA             mycode, CODE, READONLY
+    8 00000000                 ENTRY
+    9 00000000                 EXPORT           Reset_Handler
+   10 00000000         Reset_Handler
+   11 00000000 4E0D            LDR              R6, =DST
+   12 00000002 F04F 0200       MOV              R2, #0
+   13 00000006 480D            LDR              R0, =SRC
+   14 00000008 6801            LDR              R1, [R0]
+   15 0000000A 290A    UP      CMP              R1, #0XA
+   16 0000000C D304            BCC              STORE
+   17 0000000E F1A1 010A       SUB              R1, #0XA
+   18 00000012 F102 0201       ADD              R2, #01
+   19 00000016 E7F8            B                UP
+   20 00000018         STORE
+   21 00000018 F101 0130       ADD              R1, #0X30
+   22 0000001C F806 1B01       STRB             R1, [R6], #1
+   23 00000020 4611            MOV              R1, R2
+   24 00000022 F04F 0200       MOV              R2, #0
+   25 00000026 290A            CMP              R1, #0XA
+   26 00000028 D2EF            BCS              UP
+   27 0000002A F101 0130       ADD              R1, #0X30
+   28 0000002E 7031            STRB             R1, [R6]
+   29 00000030 E7FE    STOP    B                STOP
+   30 00000032 00 00 00000005 
+                       SRC     DCD              0X5
+   31 00000038 00000000 
+              00000000         AREA             mydata, DATA, READWRITE
+   32 00000000 00000000 
+                       DST     DCD              0
+   33 00000004                 END
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=.\prog5_
+hexa_to_unpacked_ascii.d -o.\prog5_hexa_to_unpacked_ascii.o -IC:\Keil\ARM\RV31\
+INC -IC:\Keil\ARM\CMSIS\Include -IC:\Keil\ARM\Inc\NXP\LPC17xx --predefine="__EV
+AL SETA 1" --list=.\prog5_hexa_to_unpacked_ascii.lst prog5_hexa_to_unpacked_asc
+ii.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file prog5_hexa_to_unpacked_ascii.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 3 in file prog5_hexa_to_unpacked_ascii.s
+   Uses
+      At line 2 in file prog5_hexa_to_unpacked_ascii.s
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 10 in file prog5_hexa_to_unpacked_ascii.s
+   Uses
+      At line 5 in file prog5_hexa_to_unpacked_ascii.s
+      At line 9 in file prog5_hexa_to_unpacked_ascii.s
+
+SRC 00000034
+
+Symbol: SRC
+   Definitions
+      At line 30 in file prog5_hexa_to_unpacked_ascii.s
+   Uses
+      At line 13 in file prog5_hexa_to_unpacked_ascii.s
+Comment: SRC used once
+STOP 00000030
+
+Symbol: STOP
+   Definitions
+      At line 29 in file prog5_hexa_to_unpacked_ascii.s
+   Uses
+      At line 29 in file prog5_hexa_to_unpacked_ascii.s
+Comment: STOP used once
+STORE 00000018
+
+Symbol: STORE
+   Definitions
+      At line 20 in file prog5_hexa_to_unpacked_ascii.s
+   Uses
+      At line 16 in file prog5_hexa_to_unpacked_ascii.s
+Comment: STORE used once
+UP 0000000A
+
+Symbol: UP
+   Definitions
+      At line 15 in file prog5_hexa_to_unpacked_ascii.s
+   Uses
+      At line 19 in file prog5_hexa_to_unpacked_ascii.s
+      At line 26 in file prog5_hexa_to_unpacked_ascii.s
+
+mycode 00000000
+
+Symbol: mycode
+   Definitions
+      At line 7 in file prog5_hexa_to_unpacked_ascii.s
+   Uses
+      None
+Comment: mycode unused
+6 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+DST 00000000
+
+Symbol: DST
+   Definitions
+      At line 32 in file prog5_hexa_to_unpacked_ascii.s
+   Uses
+      At line 11 in file prog5_hexa_to_unpacked_ascii.s
+Comment: DST used once
+mydata 00000000
+
+Symbol: mydata
+   Definitions
+      At line 31 in file prog5_hexa_to_unpacked_ascii.s
+   Uses
+      None
+Comment: mydata unused
+2 symbols
+343 symbols in table

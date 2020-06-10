@@ -1,0 +1,34 @@
+SELECT COUNT(ID),course_id FROM takes GROUP BY course_id;
+
+SELECT COUNT(ID),course_id FROM takes GROUP BY course_id HAVING COUNT(ID) > 10;
+
+SELECT COUNT(course_id), dept_name FROM instructor GROUP BY dept_name;
+
+SELECT dept_name, AVG(salary) FROM instructor GROUP BY dept_name HAVING AVG(salary) > 42000;
+
+SELECT COUNT(*), sec_id FROM takes WHERE semester = 'Spring' AND year = 2009 GROUP BY sec_id;
+
+SELECT course_id, prereq_id FROM prereq ORDER BY course_id;
+
+SELECT * FROM instructor ORDER BY salary DESC;
+
+WITH totalsal(sal_tot, depname) as (SELECT SUM(salary), dept_name FROM instructor GROUP BY dept_name)
+SELECT MAX(sal_tot) FROM totalsal;
+
+WITH avgdep(avg_name, avg_sal) as (SELECT dept_name, AVG(salary) FROM instructor GROUP BY dept_name HAVING AVG(salary) > 42000)
+SELECT AVG(salary) FROM instructor, avgdep WHERE instructor.dept_name = avgdep.avg_name;
+
+WITH sec_enroll(enroll, sec_en_id) as (SELECT COUNT(*), sec_id FROM takes WHERE semester = 'Spring' AND year = 2010 GROUP BY sec_id)
+SELECT MAX(enroll) FROM sec_enroll;
+
+SELECT DISTINCT T.Name FROM Instructor t, teaches s, takes m, student n where t.id=s.id and s.course_id=m.course_id and m.id = n.id and n.dept_name = 'Comp. Sci';
+
+Select dept_name, avg(inst_salary) From instructor group by dept_name having avg(inst_salary)>50000 and count(id)>5;
+
+
+With max_budget(value) as (select max(budget) from department)
+Select budget from department, max_budget where department.budget=max_budget.value;
+
+With dept_total(dept_name, value) as (Select dept_name, sum(salary)) from instructor group by dept_name, dept_total_avg(value) as (select avg(value) from dept_total) select dept_name from dept_total, dept_total_avg where dept_total.value>=dept_total_avg.value;
+
+With max_enroll(value) as(Select max(count(id)) From takes group by sec_id, year, semester having year=2009 and semester ='Fall') enrollment(sec_id, value) as (select sec_id, count(id) from takes group by sec_id, year, semester having year=2009 and semester='Fall') Select sec_id from enrollment.value;

@@ -1,0 +1,134 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET, DATA, READONLY
+    2 00000000                 EXPORT           __Vectors
+    3 00000000         __Vectors
+    4 00000000 40001000        DCD              0X40001000
+    5 00000004 00000000        DCD              Reset_Handler
+    6 00000008                 ALIGN
+    7 00000008                 AREA             mycode, CODE, READONLY
+    8 00000000                 ENTRY
+    9 00000000                 EXPORT           Reset_Handler
+   10 00000000         Reset_Handler
+   11 00000000 4906            LDR              R1, =VALUE1
+   12 00000002 4A07            LDR              R2, =VALUE2
+   13 00000004 FBA2 3401       UMULL            R3, R4, R2, R1
+   14 00000008 4A06            LDR              R2, =RESULT
+   15 0000000A 6014            STR              R4, [R2]
+   16 0000000C F102 0204       ADD              R2, #4
+   17 00000010 6013            STR              R3, [R2]
+   18 00000012         STOP
+   19 00000012 E7FE            B                STOP
+   20 00000014 54000000 
+                       VALUE1  DCD              0X54000000
+   21 00000018 10000002 
+                       VALUE2  DCD              0X10000002
+   22 0000001C 00000000 
+              00000000 
+              00000000         AREA             mydata, DATA, READWRITE
+   23 00000000 00000000 
+                       RESULT  DCD              0
+   24 00000004                 END
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=.\prog1_
+mul_2_32bit.d -o.\prog1_mul_2_32bit.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSI
+S\Include -IC:\Keil\ARM\Inc\NXP\LPC17xx --predefine="__EVAL SETA 1" --list=.\pr
+og1_mul_2_32bit.lst prog1_mul_2_32bit.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file prog1_mul_2_32bit.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 3 in file prog1_mul_2_32bit.s
+   Uses
+      At line 2 in file prog1_mul_2_32bit.s
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 10 in file prog1_mul_2_32bit.s
+   Uses
+      At line 5 in file prog1_mul_2_32bit.s
+      At line 9 in file prog1_mul_2_32bit.s
+
+STOP 00000012
+
+Symbol: STOP
+   Definitions
+      At line 18 in file prog1_mul_2_32bit.s
+   Uses
+      At line 19 in file prog1_mul_2_32bit.s
+Comment: STOP used once
+VALUE1 00000014
+
+Symbol: VALUE1
+   Definitions
+      At line 20 in file prog1_mul_2_32bit.s
+   Uses
+      At line 11 in file prog1_mul_2_32bit.s
+Comment: VALUE1 used once
+VALUE2 00000018
+
+Symbol: VALUE2
+   Definitions
+      At line 21 in file prog1_mul_2_32bit.s
+   Uses
+      At line 12 in file prog1_mul_2_32bit.s
+Comment: VALUE2 used once
+mycode 00000000
+
+Symbol: mycode
+   Definitions
+      At line 7 in file prog1_mul_2_32bit.s
+   Uses
+      None
+Comment: mycode unused
+5 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESULT 00000000
+
+Symbol: RESULT
+   Definitions
+      At line 23 in file prog1_mul_2_32bit.s
+   Uses
+      At line 14 in file prog1_mul_2_32bit.s
+Comment: RESULT used once
+mydata 00000000
+
+Symbol: mydata
+   Definitions
+      At line 22 in file prog1_mul_2_32bit.s
+   Uses
+      None
+Comment: mydata unused
+2 symbols
+342 symbols in table

@@ -1,0 +1,2 @@
+Dependencies for Project 'WEEK1', Target 'Target 1': (DO NOT MODIFY !)
+F (.\prg7.s)(0x5E1E8CFF)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\NXP\LPC17xx--list .\prg7.lst --xref -o .\prg7.o --depend .\prg7.d)

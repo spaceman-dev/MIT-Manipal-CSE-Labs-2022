@@ -1,0 +1,141 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET, DATA, READONLY
+    2 00000000                 EXPORT           __Vectors
+    3 00000000         __Vectors
+    4 00000000 10001000        DCD              0x10001000
+    5 00000004 00000000        DCD              Reset_Handler
+    6 00000008                 ALIGN
+    7 00000008                 AREA             mycode, CODE, READONLY
+    8 00000000                 ENTRY
+    9 00000000                 EXPORT           Reset_Handler
+   10 00000000         Reset_Handler
+   11 00000000 480C            LDR              R0, =SRC
+   12 00000002 490D            LDR              R1, =DST
+   13 00000004 6802            LDR              R2, [R0]
+   14 00000006 F04F 0301       MOV              R3, #1
+   15 0000000A F04F 040A       MOV              R4, #0XA
+   16 0000000E F04F 0500       MOV              R5, #0
+   17 00000012 F04F 070F       MOV              R7, #0XF    ;FOR MASKING PURPOS
+                                                            E
+   18 00000016 4616    UP      MOV              R6, R2
+   19 00000018 EA06 0607       AND              R6, R7
+   20 0000001C FB06 5503       MLA              R5, R6, R3, R5
+   21 00000020 FB03 F304       MUL              R3, R4
+   22 00000024 EA4F 1212       LSR              R2, #4
+   23 00000028 2A00            CMP              R2, #0
+   24 0000002A D1F4            BNE              UP
+   25 0000002C 600D            STR              R5, [R1]
+   26 0000002E         STOP
+   27 0000002E E7FE            B                STOP
+   28 00000030 15 23 23 
+              19       SRC     DCB              0X15, 0X23, 0X23, 0X19
+   29 00000034 00000000 
+              00000000         AREA             mydata, DATA, READWRITE
+   30 00000000 00000000 
+                       DST     DCD              0
+   31 00000004                 END
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=.\prg1_p
+acked_32bit_bcd_to_hexa.d -o.\prg1_packed_32bit_bcd_to_hexa.o -IC:\Keil\ARM\RV3
+1\INC -IC:\Keil\ARM\CMSIS\Include -IC:\Keil\ARM\Inc\NXP\LPC17xx --predefine="__
+EVAL SETA 1" --list=.\prg1_packed_32bit_bcd_to_hexa.lst prg1_packed_32bit_bcd_t
+o_hexa.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file prg1_packed_32bit_bcd_to_hexa.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 3 in file prg1_packed_32bit_bcd_to_hexa.s
+   Uses
+      At line 2 in file prg1_packed_32bit_bcd_to_hexa.s
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 10 in file prg1_packed_32bit_bcd_to_hexa.s
+   Uses
+      At line 5 in file prg1_packed_32bit_bcd_to_hexa.s
+      At line 9 in file prg1_packed_32bit_bcd_to_hexa.s
+
+SRC 00000030
+
+Symbol: SRC
+   Definitions
+      At line 28 in file prg1_packed_32bit_bcd_to_hexa.s
+   Uses
+      At line 11 in file prg1_packed_32bit_bcd_to_hexa.s
+Comment: SRC used once
+STOP 0000002E
+
+Symbol: STOP
+   Definitions
+      At line 26 in file prg1_packed_32bit_bcd_to_hexa.s
+   Uses
+      At line 27 in file prg1_packed_32bit_bcd_to_hexa.s
+Comment: STOP used once
+UP 00000016
+
+Symbol: UP
+   Definitions
+      At line 18 in file prg1_packed_32bit_bcd_to_hexa.s
+   Uses
+      At line 24 in file prg1_packed_32bit_bcd_to_hexa.s
+Comment: UP used once
+mycode 00000000
+
+Symbol: mycode
+   Definitions
+      At line 7 in file prg1_packed_32bit_bcd_to_hexa.s
+   Uses
+      None
+Comment: mycode unused
+5 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+DST 00000000
+
+Symbol: DST
+   Definitions
+      At line 30 in file prg1_packed_32bit_bcd_to_hexa.s
+   Uses
+      At line 12 in file prg1_packed_32bit_bcd_to_hexa.s
+Comment: DST used once
+mydata 00000000
+
+Symbol: mydata
+   Definitions
+      At line 29 in file prg1_packed_32bit_bcd_to_hexa.s
+   Uses
+      None
+Comment: mydata unused
+2 symbols
+342 symbols in table
