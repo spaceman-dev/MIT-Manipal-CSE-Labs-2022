@@ -1,0 +1,1269 @@
+Project Information                           d:\180905088_d1\week12\swap1.rpt
+
+MAX+plus II Compiler Report File
+Version 10.2 07/10/2002
+Compiled: 10/26/2019 16:47:27
+
+Copyright (C) 1988-2002 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input   Output   Bidir         Shareable
+POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
+
+swap1     EPM7096LC68-7    12       33       0      58      54          60 %
+
+User Pins:                 12       33       0  
+
+
+
+Project Information                           d:\180905088_d1\week12\swap1.rpt
+
+** AUTO GLOBAL SIGNALS **
+
+
+
+INFO: Signal 'Clock' chosen for auto global Clock
+INFO: Signal 'Resetn' chosen for auto global Clear
+
+
+Project Information                           d:\180905088_d1\week12\swap1.rpt
+
+** FILE HIERARCHY **
+
+
+
+|regn:reg5|
+|regn:reg3|
+|regn:reg4|
+
+
+Device-Specific Information:                  d:\180905088_d1\week12\swap1.rpt
+swap1
+
+***** Logic for device 'swap1' compiled without errors.
+
+
+
+
+Device: EPM7096LC68-7
+
+Device Options:
+    Turbo Bit                                    = ON
+    Security Bit                                 = OFF
+    MultiVolt I/O                              = OFF
+
+
+
+Device-Specific Information:                  d:\180905088_d1\week12\swap1.rpt
+swap1
+
+** ERROR SUMMARY **
+
+Info: Chip 'swap1' in device 'EPM7096LC68-7' has less than 20% of pins available for future logic changes -- if your project is likely to change, Altera recommends using a larger device
+                                                            B     
+                                                   R        u     
+                                                   E        s     
+                                 V     R           S        W     
+               D  D  D     D  D  C     e     C     E     V  i     
+               a  a  a     a  a  C     s     l     R  D  C  r     
+               t  t  t  G  t  t  I  G  e  G  o  G  V  o  C  e  R  
+               a  a  a  N  a  a  N  N  t  N  c  N  E  n  I  s  3  
+               2  4  1  D  3  5  T  D  n  D  k  D  D  e  O  3  3  
+             -----------------------------------------------------_ 
+           /   9  8  7  6  5  4  3  2  1 68 67 66 65 64 63 62 61   | 
+    Data0 | 10                                                  60 | R13 
+    VCCIO | 11                                                  59 | R21 
+    Data7 | 12                                                  58 | GND 
+   Extern | 13                                                  57 | R23 
+ RESERVED | 14                                                  56 | BusWires1 
+      R20 | 15                                                  55 | BusWires4 
+      GND | 16                                                  54 | R14 
+BusWires7 | 17                                                  53 | VCCIO 
+BusWires0 | 18                  EPM7096LC68-7                   52 | R24 
+      R30 | 19                                                  51 | R32 
+BusWires2 | 20                                                  50 | R34 
+    VCCIO | 21                                                  49 | R35 
+        w | 22                                                  48 | GND 
+    Data6 | 23                                                  47 | R25 
+ RESERVED | 24                                                  46 | R22 
+ RESERVED | 25                                                  45 | R26 
+      GND | 26                                                  44 | R27 
+          |_  27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43  _| 
+            ------------------------------------------------------ 
+               R  R  R  R  V  R  B  G  V  R  R  G  R  B  R  R  V  
+               E  1  1  1  C  1  u  N  C  3  1  N  3  u  3  1  C  
+               S  2  7  0  C  6  s  D  C  1  1  D  7  s  6  5  C  
+               E           I     W     I              W        I  
+               R           O     i     N              i        O  
+               V                 r     T              r           
+               E                 e                    e           
+               D                 s                    s           
+                                 6                    5           
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+
+
+Device-Specific Information:                  d:\180905088_d1\week12\swap1.rpt
+swap1
+
+** RESOURCE USAGE **
+
+                                                Shareable     External
+Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
+
+A:     LC1 - LC16     0/16(  0%)   8/ 8(100%)   0/16(  0%)   0/36(  0%) 
+B:    LC17 - LC32    10/16( 62%)   7/ 8( 87%)  16/16(100%)  22/36( 61%) 
+C:    LC33 - LC48     7/16( 43%)   5/ 8( 62%)  11/16( 68%)  17/36( 47%) 
+D:    LC49 - LC64    12/16( 75%)   8/ 8(100%)  16/16(100%)  19/36( 52%) 
+E:    LC65 - LC80    15/16( 93%)   8/ 8(100%)  16/16(100%)  19/36( 52%) 
+F:    LC81 - LC96    14/16( 87%)   7/ 8( 87%)  15/16( 93%)  20/36( 55%) 
+
+
+Total dedicated input pins used:                 2/4      ( 50%)
+Total I/O pins used:                            43/48     ( 89%)
+Total logic cells used:                         58/96     ( 60%)
+Total shareable expanders used:                 54/96     ( 56%)
+Total Turbo logic cells used:                   58/96     ( 60%)
+Total shareable expanders not available (n/a):  20/96     ( 20%)
+Average fan-in:                                  6.77
+Total fan-in:                                   393
+
+Total input pins required:                      12
+Total output pins required:                     33
+Total bidirectional pins required:               0
+Total logic cells required:                     58
+Total flipflops required:                       27
+Total product terms required:                  246
+Total logic cells lending parallel expanders:    0
+Total shareable expanders in database:          38
+
+Synthesized logic cells:                        30/  96   ( 31%)
+
+
+
+Device-Specific Information:                  d:\180905088_d1\week12\swap1.rpt
+swap1
+
+** INPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  67      -   -       INPUT  G            0      0   0    0    0    0    0  Clock
+  10    (6)  (A)      INPUT               0      0   0    0    0    1    1  Data0
+   7   (12)  (A)      INPUT               0      0   0    0    0    1    1  Data1
+   9    (8)  (A)      INPUT               0      0   0    0    0    1    1  Data2
+   5   (14)  (A)      INPUT               0      0   0    0    0    2    1  Data3
+   8    (9)  (A)      INPUT               0      0   0    0    0    2    1  Data4
+   4   (16)  (A)      INPUT               0      0   0    0    0    2    1  Data5
+  23   (17)  (B)      INPUT               0      0   0    0    0    2    1  Data6
+  12    (4)  (A)      INPUT               0      0   0    0    0    2    1  Data7
+  13    (1)  (A)      INPUT               0      0   0    0    0   16   11  Extern
+   1      -   -       INPUT  G            0      0   0    0    0    0    0  Resetn
+  22   (19)  (B)      INPUT               0      0   0    0    0    0    1  w
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+G = Global Source. Fan-out destinations counted here do not include destinations
+that are driven using global routing resources. Refer to the Auto Global Signals,
+Clock Signals, Clear Signals, Synchronous Load Signals, and Synchronous Clear Signals
+Sections of this Report File for information on which signals' fan-outs are used as
+Clock, Clear, Preset, Output Enable, and synchronous Load signals.
+
+
+Device-Specific Information:                  d:\180905088_d1\week12\swap1.rpt
+swap1
+
+** OUTPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  18     25    B     OUTPUT    s t        1      0   1    1    8    3    3  BusWires0
+  56     81    F     OUTPUT    s t        1      0   1    1    8    3    3  BusWires1
+  20     21    B     OUTPUT    s t        1      0   1    1    8    3    3  BusWires2
+  62     92    F     OUTPUT    s t        6      5   1    2    8    3    2  BusWires3
+  55     80    E     OUTPUT    s t        6      5   1    2    8    3    2  BusWires4
+  40     56    D     OUTPUT    s t        6      5   1    2    8    3    2  BusWires5
+  33     33    C     OUTPUT    s t        6      5   1    2    8    3    2  BusWires6
+  17     27    B     OUTPUT    s t        6      5   1    2    8    3    2  BusWires7
+  64     94    F     OUTPUT      t        0      0   0    0    3    0    0  Done
+  30     37    C         FF   +  t        2      2   0    2    4    1    3  R10
+  37     51    D         FF   +  t        2      2   0    2    4    1    3  R11
+  28     41    C         FF   +  t        2      2   0    2    4    1    3  R12
+  60     88    F         FF   +  t        2      2   0    2    4    1    2  R13
+  54     77    E         FF   +  t        2      2   0    2    4    1    2  R14
+  42     59    D         FF   +  t        2      2   0    2    4    1    2  R15
+  32     35    C         FF   +  t        2      2   0    2    4    1    2  R16
+  29     40    C         FF   +  t        2      2   0    2    4    1    2  R17
+  15     29    B         FF   +  t        2      2   0    0    4    1    3  R20
+  59     86    F         FF   +  t        2      2   0    0    4    1    3  R21
+  46     65    E         FF   +  t        2      2   0    0    4    1    3  R22
+  57     84    F         FF   +  t        2      2   0    0    4    1    2  R23
+  52     75    E         FF   +  t        2      2   0    0    4    1    2  R24
+  47     67    E         FF   +  t        2      2   0    0    4    1    2  R25
+  45     64    D         FF   +  t        2      2   0    0    4    1    2  R26
+  44     61    D         FF   +  t        2      2   0    0    4    1    2  R27
+  19     24    B         FF   +  t        0      0   0    0    4    0    3  R30
+  36     49    D         FF   +  t        0      0   0    0    4    0    3  R31
+  51     73    E         FF   +  t        0      0   0    0    4    0    3  R32
+  61     89    F         FF   +  t        0      0   0    0    4    1    2  R33
+  50     72    E         FF   +  t        0      0   0    0    4    1    2  R34
+  49     69    E         FF   +  t        0      0   0    0    4    1    2  R35
+  41     57    D         FF   +  t        0      0   0    0    4    1    2  R36
+  39     53    D         FF   +  t        0      0   0    0    4    1    2  R37
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:                  d:\180905088_d1\week12\swap1.rpt
+swap1
+
+** BURIED LOGIC **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+   -     76    E      LCELL    s t        0      0   0    0    4    0    2  ~108~1
+   -     83    F      LCELL    s t        0      0   0    0    4    0    2  ~109~1
+   -     82    F      LCELL    s t        1      0   1    1    4    0    2  ~110~1
+   -     66    E       DFFE   +  t        0      0   0    0    1   33   22  y2 (:112)
+   -     85    F       DFFE   +  t        0      0   0    0    1   33   22  y1 (:113)
+   -     95    F       DFFE   +  t        0      0   0    0    1   33   22  y0 (:114)
+ (23)    17    B       SOFT    s t        3      1   1    0    7    1    0  ~213~1
+   -     34    C       SOFT    s t        3      1   1    0    7    1    0  ~214~1
+   -     60    D       SOFT    s t        3      1   1    0    7    1    0  ~215~1
+   -     68    E       SOFT    s t        3      1   1    0    7    1    0  ~216~1
+   -     91    F       SOFT    s t        3      1   1    0    7    1    0  ~217~1
+   -     70    E       SOFT    s t        3      1   1    0    7    1    0  ~218~1
+   -     62    D       SOFT    s t        3      1   1    0    7    1    0  ~219~1
+   -     18    B       SOFT    s t        3      1   1    0    7    1    0  ~220~1
+   -     22    B      LCELL    s t        5      5   0    2    7    1    0  ~229~1~2
+   -     44    C      LCELL    s t        5      5   0    2    7    1    0  ~230~1~2
+   -     50    D      LCELL    s t        5      5   0    2    7    1    0  ~231~1~2
+   -     78    E      LCELL    s t        5      5   0    2    7    1    0  ~232~1~2
+   -     87    F      LCELL    s t        5      5   0    2    7    1    0  ~233~1~2
+   -     74    E      LCELL    s t        0      0   0    1    8    1    0  ~234~1~2
+   -     79    E       SOFT    s t        1      0   1    2    7    1    1  ~234~1~3
+   -     93    F      LCELL    s t        0      0   0    1    8    1    0  ~235~1~2
+   -     63    D       SOFT    s t        1      0   1    2    7    1    1  ~235~1~3
+   -     20    B      LCELL    s t        0      0   0    1    8    1    0  ~236~1~2
+ (22)    19    B       SOFT    s t        1      0   1    2    7    1    1  ~236~1~3
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:                  d:\180905088_d1\week12\swap1.rpt
+swap1
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'B':
+
+                             Logic cells placed in LAB 'B'
+        +------------------- LC25 BusWires0
+        | +----------------- LC21 BusWires2
+        | | +--------------- LC27 BusWires7
+        | | | +------------- LC29 R20
+        | | | | +----------- LC24 R30
+        | | | | | +--------- LC17 ~213~1
+        | | | | | | +------- LC18 ~220~1
+        | | | | | | | +----- LC22 ~229~1~2
+        | | | | | | | | +--- LC20 ~236~1~2
+        | | | | | | | | | +- LC19 ~236~1~3
+        | | | | | | | | | | 
+        | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | |   that feed LAB 'B'
+LC      | | | | | | | | | | | A B C D E F |     Logic cells that feed LAB 'B':
+LC25 -> * - - * * - * - * * | - * - - - - | <-- BusWires0
+LC21 -> - * - - - - - - - - | - * - - * - | <-- BusWires2
+LC27 -> - - * - - * - * - - | - * - * - - | <-- BusWires7
+LC29 -> * - - - - - * - * * | - * - - - - | <-- R20
+LC24 -> - - - - - - * - * * | - * - - - - | <-- R30
+LC22 -> - - * - - - - - - - | - * - - - - | <-- ~229~1~2
+LC20 -> * - - - - - - - - - | - * - - - - | <-- ~236~1~2
+LC19 -> * - - - - - - - * - | - * - - - - | <-- ~236~1~3
+
+Pin
+67   -> - - - - - - - - - - | - - - - - - | <-- Clock
+10   -> - - - - - - - - - * | - * * - - - | <-- Data0
+12   -> - - * - - - - * - - | - * * - - - | <-- Data7
+13   -> * * * - - - - * * * | - * * * * * | <-- Extern
+1    -> - - - - - - - - - - | - - - - - - | <-- Resetn
+LC37 -> * - - - - - * - * * | - * - - - - | <-- R10
+LC41 -> - * - - - - - - - - | - * - - * - | <-- R12
+LC40 -> - - * - - * - * - - | - * - - - - | <-- R17
+LC65 -> - * - - - - - - - - | - * - - * - | <-- R22
+LC61 -> - - * - - * - * - - | - * - - - - | <-- R27
+LC53 -> - - * - - * - * - - | - * - - - - | <-- R37
+LC66 -> * * * * * * * * * * | - * * * * * | <-- y2
+LC85 -> * * * * * * * * * * | - * * * * * | <-- y1
+LC95 -> * * * * * * * * * * | - * * * * * | <-- y0
+LC74 -> - * - - - - - - - - | - * - - - - | <-- ~234~1~2
+LC79 -> - * - - - - - - - - | - * - - * - | <-- ~234~1~3
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:                  d:\180905088_d1\week12\swap1.rpt
+swap1
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'C':
+
+                       Logic cells placed in LAB 'C'
+        +------------- LC33 BusWires6
+        | +----------- LC37 R10
+        | | +--------- LC41 R12
+        | | | +------- LC35 R16
+        | | | | +----- LC40 R17
+        | | | | | +--- LC34 ~214~1
+        | | | | | | +- LC44 ~230~1~2
+        | | | | | | | 
+        | | | | | | |   Other LABs fed by signals
+        | | | | | | |   that feed LAB 'C'
+LC      | | | | | | | | A B C D E F |     Logic cells that feed LAB 'C':
+LC33 -> * - - - - * * | - - * * - - | <-- BusWires6
+LC35 -> * - - - - * * | - - * - - - | <-- R16
+LC34 -> - - - * - - - | - - * - - - | <-- ~214~1
+LC44 -> * - - - - - - | - - * - - - | <-- ~230~1~2
+
+Pin
+67   -> - - - - - - - | - - - - - - | <-- Clock
+10   -> - * - - - - - | - * * - - - | <-- Data0
+9    -> - - * - - - - | - - * - * - | <-- Data2
+23   -> * - - * - - * | - - * - - - | <-- Data6
+12   -> - - - - * - - | - * * - - - | <-- Data7
+13   -> * * * * * - * | - * * * * * | <-- Extern
+1    -> - - - - - - - | - - - - - - | <-- Resetn
+LC64 -> * - - - - * * | - - * - - - | <-- R26
+LC57 -> * - - - - * * | - - * - - - | <-- R36
+LC66 -> * * * * * * * | - * * * * * | <-- y2
+LC85 -> * * * * * * * | - * * * * * | <-- y1
+LC95 -> * * * * * * * | - * * * * * | <-- y0
+LC17 -> - - - - * - - | - - * - - - | <-- ~213~1
+LC70 -> - - * - - - - | - - * - - - | <-- ~218~1
+LC18 -> - * - - - - - | - - * - - - | <-- ~220~1
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:                  d:\180905088_d1\week12\swap1.rpt
+swap1
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'D':
+
+                                 Logic cells placed in LAB 'D'
+        +----------------------- LC56 BusWires5
+        | +--------------------- LC51 R11
+        | | +------------------- LC59 R15
+        | | | +----------------- LC64 R26
+        | | | | +--------------- LC61 R27
+        | | | | | +------------- LC49 R31
+        | | | | | | +----------- LC57 R36
+        | | | | | | | +--------- LC53 R37
+        | | | | | | | | +------- LC60 ~215~1
+        | | | | | | | | | +----- LC62 ~219~1
+        | | | | | | | | | | +--- LC50 ~231~1~2
+        | | | | | | | | | | | +- LC63 ~235~1~3
+        | | | | | | | | | | | | 
+        | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | |   that feed LAB 'D'
+LC      | | | | | | | | | | | | | A B C D E F |     Logic cells that feed LAB 'D':
+LC56 -> * - - - - - - - * - * - | - - - * * - | <-- BusWires5
+LC51 -> - - - - - - - - - * - * | - - - * - * | <-- R11
+LC59 -> * - - - - - - - * - * - | - - - * - - | <-- R15
+LC49 -> - - - - - - - - - * - * | - - - * - * | <-- R31
+LC60 -> - - * - - - - - - - - - | - - - * - - | <-- ~215~1
+LC62 -> - * - - - - - - - - - - | - - - * - - | <-- ~219~1
+LC50 -> * - - - - - - - - - - - | - - - * - - | <-- ~231~1~2
+
+Pin
+67   -> - - - - - - - - - - - - | - - - - - - | <-- Clock
+7    -> - * - - - - - - - - - * | - - - * - - | <-- Data1
+4    -> * - * - - - - - - - * - | - - - * - - | <-- Data5
+13   -> * * * - - - - - - - * * | - * * * * * | <-- Extern
+1    -> - - - - - - - - - - - - | - - - - - - | <-- Resetn
+LC81 -> - - - - - * - - - * - * | - - - * - * | <-- BusWires1
+LC33 -> - - - * - - * - - - - - | - - * * - - | <-- BusWires6
+LC27 -> - - - - * - - * - - - - | - * - * - - | <-- BusWires7
+LC86 -> - - - - - - - - - * - * | - - - * - * | <-- R21
+LC67 -> * - - - - - - - * - * - | - - - * - - | <-- R25
+LC69 -> * - - - - - - - * - * - | - - - * - - | <-- R35
+LC66 -> * * * * * * * * * * * * | - * * * * * | <-- y2
+LC85 -> * * * * * * * * * * * * | - * * * * * | <-- y1
+LC95 -> * * * * * * * * * * * * | - * * * * * | <-- y0
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:                  d:\180905088_d1\week12\swap1.rpt
+swap1
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'E':
+
+                                       Logic cells placed in LAB 'E'
+        +----------------------------- LC80 BusWires4
+        | +--------------------------- LC77 R14
+        | | +------------------------- LC65 R22
+        | | | +----------------------- LC75 R24
+        | | | | +--------------------- LC67 R25
+        | | | | | +------------------- LC73 R32
+        | | | | | | +----------------- LC72 R34
+        | | | | | | | +--------------- LC69 R35
+        | | | | | | | | +------------- LC76 ~108~1
+        | | | | | | | | | +----------- LC66 y2
+        | | | | | | | | | | +--------- LC68 ~216~1
+        | | | | | | | | | | | +------- LC70 ~218~1
+        | | | | | | | | | | | | +----- LC78 ~232~1~2
+        | | | | | | | | | | | | | +--- LC74 ~234~1~2
+        | | | | | | | | | | | | | | +- LC79 ~234~1~3
+        | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | |   that feed LAB 'E'
+LC      | | | | | | | | | | | | | | | | A B C D E F |     Logic cells that feed LAB 'E':
+LC80 -> * - - * - - * - - - * - * - - | - - - - * - | <-- BusWires4
+LC77 -> * - - - - - - - - - * - * - - | - - - - * - | <-- R14
+LC65 -> - - - - - - - - - - - * - * * | - * - - * - | <-- R22
+LC75 -> * - - - - - - - - - * - * - - | - - - - * - | <-- R24
+LC73 -> - - - - - - - - - - - * - * * | - - - - * - | <-- R32
+LC72 -> * - - - - - - - - - * - * - - | - - - - * - | <-- R34
+LC76 -> - - - - - - - - * * - - - - - | - - - - * - | <-- ~108~1
+LC66 -> * * * * * * * * * - * * * * * | - * * * * * | <-- y2
+LC68 -> - * - - - - - - - - - - - - - | - - - - * - | <-- ~216~1
+LC78 -> * - - - - - - - - - - - - - - | - - - - * - | <-- ~232~1~2
+LC79 -> - - - - - - - - - - - - - * - | - * - - * - | <-- ~234~1~3
+
+Pin
+67   -> - - - - - - - - - - - - - - - | - - - - - - | <-- Clock
+9    -> - - - - - - - - - - - - - - * | - - * - * - | <-- Data2
+8    -> * * - - - - - - - - - - * - - | - - - - * - | <-- Data4
+13   -> * * - - - - - - - - - - * * * | - * * * * * | <-- Extern
+1    -> - - - - - - - - - - - - - - - | - - - - - - | <-- Resetn
+LC21 -> - - * - - * - - - - - * - * * | - * - - * - | <-- BusWires2
+LC56 -> - - - - * - - * - - - - - - - | - - - * * - | <-- BusWires5
+LC41 -> - - - - - - - - - - - * - * * | - * - - * - | <-- R12
+LC85 -> * * * * * * * * * - * * * * * | - * * * * * | <-- y1
+LC95 -> * * * * * * * * * - * * * * * | - * * * * * | <-- y0
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:                  d:\180905088_d1\week12\swap1.rpt
+swap1
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'F':
+
+                                     Logic cells placed in LAB 'F'
+        +--------------------------- LC81 BusWires1
+        | +------------------------- LC92 BusWires3
+        | | +----------------------- LC94 Done
+        | | | +--------------------- LC88 R13
+        | | | | +------------------- LC86 R21
+        | | | | | +----------------- LC84 R23
+        | | | | | | +--------------- LC89 R33
+        | | | | | | | +------------- LC83 ~109~1
+        | | | | | | | | +----------- LC82 ~110~1
+        | | | | | | | | | +--------- LC85 y1
+        | | | | | | | | | | +------- LC95 y0
+        | | | | | | | | | | | +----- LC91 ~217~1
+        | | | | | | | | | | | | +--- LC87 ~233~1~2
+        | | | | | | | | | | | | | +- LC93 ~235~1~2
+        | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | |   that feed LAB 'F'
+LC      | | | | | | | | | | | | | | | A B C D E F |     Logic cells that feed LAB 'F':
+LC81 -> * - - - * - - - - - - - - * | - - - * - * | <-- BusWires1
+LC92 -> - * - - - * * - - - - * * - | - - - - - * | <-- BusWires3
+LC88 -> - * - - - - - - - - - * * - | - - - - - * | <-- R13
+LC86 -> * - - - - - - - - - - - - * | - - - * - * | <-- R21
+LC84 -> - * - - - - - - - - - * * - | - - - - - * | <-- R23
+LC89 -> - * - - - - - - - - - * * - | - - - - - * | <-- R33
+LC83 -> - - - - - - - * - * - - - - | - - - - - * | <-- ~109~1
+LC82 -> - - - - - - - - * - * - - - | - - - - - * | <-- ~110~1
+LC85 -> * * * * * * * * * - - * * * | - * * * * * | <-- y1
+LC95 -> * * * * * * * * * - - * * * | - * * * * * | <-- y0
+LC91 -> - - - * - - - - - - - - - - | - - - - - * | <-- ~217~1
+LC87 -> - * - - - - - - - - - - - - | - - - - - * | <-- ~233~1~2
+LC93 -> * - - - - - - - - - - - - - | - - - - - * | <-- ~235~1~2
+
+Pin
+67   -> - - - - - - - - - - - - - - | - - - - - - | <-- Clock
+5    -> - * - * - - - - - - - - * - | - - - - - * | <-- Data3
+13   -> * * - * - - - - - - - - * * | - * * * * * | <-- Extern
+1    -> - - - - - - - - - - - - - - | - - - - - - | <-- Resetn
+22   -> - - - - - - - - * - - - - - | - - - - - * | <-- w
+LC51 -> * - - - - - - - - - - - - * | - - - * - * | <-- R11
+LC49 -> - - - - - - - - - - - - - * | - - - * - * | <-- R31
+LC66 -> * * * * * * * * * - - * * * | - * * * * * | <-- y2
+LC63 -> * - - - - - - - - - - - - * | - - - - - * | <-- ~235~1~3
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:                  d:\180905088_d1\week12\swap1.rpt
+swap1
+
+** EQUATIONS **
+
+Clock    : INPUT;
+Data0    : INPUT;
+Data1    : INPUT;
+Data2    : INPUT;
+Data3    : INPUT;
+Data4    : INPUT;
+Data5    : INPUT;
+Data6    : INPUT;
+Data7    : INPUT;
+Extern   : INPUT;
+Resetn   : INPUT;
+w        : INPUT;
+
+-- Node name is 'BusWires0' = '~236~1' 
+-- Equation name is 'BusWires0', location is LC025, type is output.
+ BusWires0 = LCELL( _EQ001 $ !_LC019);
+  _EQ001 = !Extern & !_LC019 & !R20 &  y0 &  y1 & !y2
+         # !BusWires0 & !Extern & !_LC019 & !R10 & !R20 &  y1
+         # !Extern & !_LC019 & !R10 & !y0 &  y1 & !y2
+         #  _LC020;
+
+-- Node name is 'BusWires1' = '~235~1' 
+-- Equation name is 'BusWires1', location is LC081, type is output.
+ BusWires1 = LCELL( _EQ002 $ !_LC063);
+  _EQ002 = !Extern & !_LC063 & !R21 &  y0 &  y1 & !y2
+         # !BusWires1 & !Extern & !_LC063 & !R11 & !R21 &  y1
+         # !Extern & !_LC063 & !R11 & !y0 &  y1 & !y2
+         #  _LC093;
+
+-- Node name is 'BusWires2' = '~234~1' 
+-- Equation name is 'BusWires2', location is LC021, type is output.
+ BusWires2 = LCELL( _EQ003 $ !_LC079);
+  _EQ003 = !Extern & !_LC079 & !R22 &  y0 &  y1 & !y2
+         # !BusWires2 & !Extern & !_LC079 & !R12 & !R22 &  y1
+         # !Extern & !_LC079 & !R12 & !y0 &  y1 & !y2
+         #  _LC074;
+
+-- Node name is 'BusWires3' = '~233~1' 
+-- Equation name is 'BusWires3', location is LC092, type is output.
+ BusWires3 = LCELL( _EQ004 $  _EQ005);
+  _EQ004 = !Extern & !R23 &  _X001 &  _X002 &  _X003 &  _X004 &  _X005 &  y0 & 
+              y1 & !y2
+         # !BusWires3 & !Extern & !R13 & !R23 &  _X001 &  _X002 &  _X003 & 
+              _X004 &  _X005 &  y1
+         # !Extern & !R13 &  _X001 &  _X002 &  _X003 &  _X004 &  _X005 & !y0 & 
+              y1 & !y2
+         #  _LC087;
+  _X001  = EXP(!BusWires3 & !Extern &  y1 &  y2);
+  _X002  = EXP(!BusWires3 & !Extern & !R13 & !R23 & !R33);
+  _X003  = EXP(!BusWires3 & !Extern &  y0 &  y2);
+  _X004  = EXP(!BusWires3 & !Extern & !y1 & !y2);
+  _X005  = EXP(!Data3 &  Extern);
+  _EQ005 =  _X001 &  _X002 &  _X003 &  _X004 &  _X005;
+  _X001  = EXP(!BusWires3 & !Extern &  y1 &  y2);
+  _X002  = EXP(!BusWires3 & !Extern & !R13 & !R23 & !R33);
+  _X003  = EXP(!BusWires3 & !Extern &  y0 &  y2);
+  _X004  = EXP(!BusWires3 & !Extern & !y1 & !y2);
+  _X005  = EXP(!Data3 &  Extern);
+
+-- Node name is 'BusWires4' = '~232~1' 
+-- Equation name is 'BusWires4', location is LC080, type is output.
+ BusWires4 = LCELL( _EQ006 $  _EQ007);
+  _EQ006 = !Extern & !R24 &  _X006 &  _X007 &  _X008 &  _X009 &  _X010 &  y0 & 
+              y1 & !y2
+         # !BusWires4 & !Extern & !R14 & !R24 &  _X006 &  _X007 &  _X008 & 
+              _X009 &  _X010 &  y1
+         # !Extern & !R14 &  _X006 &  _X007 &  _X008 &  _X009 &  _X010 & !y0 & 
+              y1 & !y2
+         #  _LC078;
+  _X006  = EXP(!BusWires4 & !Extern &  y1 &  y2);
+  _X007  = EXP(!BusWires4 & !Extern & !R14 & !R24 & !R34);
+  _X008  = EXP(!BusWires4 & !Extern &  y0 &  y2);
+  _X009  = EXP(!BusWires4 & !Extern & !y1 & !y2);
+  _X010  = EXP(!Data4 &  Extern);
+  _EQ007 =  _X006 &  _X007 &  _X008 &  _X009 &  _X010;
+  _X006  = EXP(!BusWires4 & !Extern &  y1 &  y2);
+  _X007  = EXP(!BusWires4 & !Extern & !R14 & !R24 & !R34);
+  _X008  = EXP(!BusWires4 & !Extern &  y0 &  y2);
+  _X009  = EXP(!BusWires4 & !Extern & !y1 & !y2);
+  _X010  = EXP(!Data4 &  Extern);
+
+-- Node name is 'BusWires5' = '~231~1' 
+-- Equation name is 'BusWires5', location is LC056, type is output.
+ BusWires5 = LCELL( _EQ008 $  _EQ009);
+  _EQ008 = !Extern & !R25 &  _X011 &  _X012 &  _X013 &  _X014 &  _X015 &  y0 & 
+              y1 & !y2
+         # !BusWires5 & !Extern & !R15 & !R25 &  _X011 &  _X012 &  _X013 & 
+              _X014 &  _X015 &  y1
+         # !Extern & !R15 &  _X011 &  _X012 &  _X013 &  _X014 &  _X015 & !y0 & 
+              y1 & !y2
+         #  _LC050;
+  _X011  = EXP(!BusWires5 & !Extern &  y1 &  y2);
+  _X012  = EXP(!BusWires5 & !Extern & !R15 & !R25 & !R35);
+  _X013  = EXP(!BusWires5 & !Extern &  y0 &  y2);
+  _X014  = EXP(!BusWires5 & !Extern & !y1 & !y2);
+  _X015  = EXP(!Data5 &  Extern);
+  _EQ009 =  _X011 &  _X012 &  _X013 &  _X014 &  _X015;
+  _X011  = EXP(!BusWires5 & !Extern &  y1 &  y2);
+  _X012  = EXP(!BusWires5 & !Extern & !R15 & !R25 & !R35);
+  _X013  = EXP(!BusWires5 & !Extern &  y0 &  y2);
+  _X014  = EXP(!BusWires5 & !Extern & !y1 & !y2);
+  _X015  = EXP(!Data5 &  Extern);
+
+-- Node name is 'BusWires6' = '~230~1' 
+-- Equation name is 'BusWires6', location is LC033, type is output.
+ BusWires6 = LCELL( _EQ010 $  _EQ011);
+  _EQ010 = !Extern & !R26 &  _X016 &  _X017 &  _X018 &  _X019 &  _X020 &  y0 & 
+              y1 & !y2
+         # !BusWires6 & !Extern & !R16 & !R26 &  _X016 &  _X017 &  _X018 & 
+              _X019 &  _X020 &  y1
+         # !Extern & !R16 &  _X016 &  _X017 &  _X018 &  _X019 &  _X020 & !y0 & 
+              y1 & !y2
+         #  _LC044;
+  _X016  = EXP(!BusWires6 & !Extern &  y1 &  y2);
+  _X017  = EXP(!BusWires6 & !Extern & !R16 & !R26 & !R36);
+  _X018  = EXP(!BusWires6 & !Extern &  y0 &  y2);
+  _X019  = EXP(!BusWires6 & !Extern & !y1 & !y2);
+  _X020  = EXP(!Data6 &  Extern);
+  _EQ011 =  _X016 &  _X017 &  _X018 &  _X019 &  _X020;
+  _X016  = EXP(!BusWires6 & !Extern &  y1 &  y2);
+  _X017  = EXP(!BusWires6 & !Extern & !R16 & !R26 & !R36);
+  _X018  = EXP(!BusWires6 & !Extern &  y0 &  y2);
+  _X019  = EXP(!BusWires6 & !Extern & !y1 & !y2);
+  _X020  = EXP(!Data6 &  Extern);
+
+-- Node name is 'BusWires7' = '~229~1' 
+-- Equation name is 'BusWires7', location is LC027, type is output.
+ BusWires7 = LCELL( _EQ012 $  _EQ013);
+  _EQ012 = !Extern & !R27 &  _X021 &  _X022 &  _X023 &  _X024 &  _X025 &  y0 & 
+              y1 & !y2
+         # !BusWires7 & !Extern & !R17 & !R27 &  _X021 &  _X022 &  _X023 & 
+              _X024 &  _X025 &  y1
+         # !Extern & !R17 &  _X021 &  _X022 &  _X023 &  _X024 &  _X025 & !y0 & 
+              y1 & !y2
+         #  _LC022;
+  _X021  = EXP(!BusWires7 & !Extern &  y1 &  y2);
+  _X022  = EXP(!BusWires7 & !Extern & !R17 & !R27 & !R37);
+  _X023  = EXP(!BusWires7 & !Extern &  y0 &  y2);
+  _X024  = EXP(!BusWires7 & !Extern & !y1 & !y2);
+  _X025  = EXP(!Data7 &  Extern);
+  _EQ013 =  _X021 &  _X022 &  _X023 &  _X024 &  _X025;
+  _X021  = EXP(!BusWires7 & !Extern &  y1 &  y2);
+  _X022  = EXP(!BusWires7 & !Extern & !R17 & !R27 & !R37);
+  _X023  = EXP(!BusWires7 & !Extern &  y0 &  y2);
+  _X024  = EXP(!BusWires7 & !Extern & !y1 & !y2);
+  _X025  = EXP(!Data7 &  Extern);
+
+-- Node name is 'Done' 
+-- Equation name is 'Done', location is LC094, type is output.
+ Done    = LCELL( _EQ014 $  GND);
+  _EQ014 = !y0 & !y1 &  y2;
+
+-- Node name is 'R10' = '|regn:reg4|:27' 
+-- Equation name is 'R10', type is output 
+ R10     = DFFE( _EQ015 $  GND, GLOBAL( Clock),  VCC,  VCC,  _EQ016);
+  _EQ015 =  Data0 &  Extern
+         # !Extern &  _LC018;
+  _EQ016 =  _X026 &  _X027 & !y2;
+  _X026  = EXP( y0 & !y1);
+  _X027  = EXP(!y0 &  y1);
+
+-- Node name is 'R11' = '|regn:reg4|:26' 
+-- Equation name is 'R11', type is output 
+ R11     = DFFE( _EQ017 $  GND, GLOBAL( Clock),  VCC,  VCC,  _EQ018);
+  _EQ017 =  Data1 &  Extern
+         # !Extern &  _LC062;
+  _EQ018 =  _X026 &  _X027 & !y2;
+  _X026  = EXP( y0 & !y1);
+  _X027  = EXP(!y0 &  y1);
+
+-- Node name is 'R12' = '|regn:reg4|:25' 
+-- Equation name is 'R12', type is output 
+ R12     = DFFE( _EQ019 $  GND, GLOBAL( Clock),  VCC,  VCC,  _EQ020);
+  _EQ019 =  Data2 &  Extern
+         # !Extern &  _LC070;
+  _EQ020 =  _X026 &  _X027 & !y2;
+  _X026  = EXP( y0 & !y1);
+  _X027  = EXP(!y0 &  y1);
+
+-- Node name is 'R13' = '|regn:reg4|:24' 
+-- Equation name is 'R13', type is output 
+ R13     = DFFE( _EQ021 $  GND, GLOBAL( Clock),  VCC,  VCC,  _EQ022);
+  _EQ021 =  Data3 &  Extern
+         # !Extern &  _LC091;
+  _EQ022 =  _X026 &  _X027 & !y2;
+  _X026  = EXP( y0 & !y1);
+  _X027  = EXP(!y0 &  y1);
+
+-- Node name is 'R14' = '|regn:reg4|:23' 
+-- Equation name is 'R14', type is output 
+ R14     = DFFE( _EQ023 $  GND, GLOBAL( Clock),  VCC,  VCC,  _EQ024);
+  _EQ023 =  Data4 &  Extern
+         # !Extern &  _LC068;
+  _EQ024 =  _X026 &  _X027 & !y2;
+  _X026  = EXP( y0 & !y1);
+  _X027  = EXP(!y0 &  y1);
+
+-- Node name is 'R15' = '|regn:reg4|:22' 
+-- Equation name is 'R15', type is output 
+ R15     = DFFE( _EQ025 $  GND, GLOBAL( Clock),  VCC,  VCC,  _EQ026);
+  _EQ025 =  Data5 &  Extern
+         # !Extern &  _LC060;
+  _EQ026 =  _X026 &  _X027 & !y2;
+  _X026  = EXP( y0 & !y1);
+  _X027  = EXP(!y0 &  y1);
+
+-- Node name is 'R16' = '|regn:reg4|:21' 
+-- Equation name is 'R16', type is output 
+ R16     = DFFE( _EQ027 $  GND, GLOBAL( Clock),  VCC,  VCC,  _EQ028);
+  _EQ027 =  Data6 &  Extern
+         # !Extern &  _LC034;
+  _EQ028 =  _X026 &  _X027 & !y2;
+  _X026  = EXP( y0 & !y1);
+  _X027  = EXP(!y0 &  y1);
+
+-- Node name is 'R17' = '|regn:reg4|:20' 
+-- Equation name is 'R17', type is output 
+ R17     = DFFE( _EQ029 $  GND, GLOBAL( Clock),  VCC,  VCC,  _EQ030);
+  _EQ029 =  Data7 &  Extern
+         # !Extern &  _LC017;
+  _EQ030 =  _X026 &  _X027 & !y2;
+  _X026  = EXP( y0 & !y1);
+  _X027  = EXP(!y0 &  y1);
+
+-- Node name is 'R20' = '|regn:reg5|:27' 
+-- Equation name is 'R20', type is output 
+ R20     = DFFE( BusWires0 $  GND, GLOBAL( Clock),  VCC,  VCC,  _EQ031);
+  _EQ031 =  _X028 &  _X029 & !y1;
+  _X028  = EXP(!y0 & !y2);
+  _X029  = EXP( y0 &  y2);
+
+-- Node name is 'R21' = '|regn:reg5|:26' 
+-- Equation name is 'R21', type is output 
+ R21     = DFFE( BusWires1 $  GND, GLOBAL( Clock),  VCC,  VCC,  _EQ032);
+  _EQ032 =  _X028 &  _X029 & !y1;
+  _X028  = EXP(!y0 & !y2);
+  _X029  = EXP( y0 &  y2);
+
+-- Node name is 'R22' = '|regn:reg5|:25' 
+-- Equation name is 'R22', type is output 
+ R22     = DFFE( BusWires2 $  GND, GLOBAL( Clock),  VCC,  VCC,  _EQ033);
+  _EQ033 =  _X028 &  _X029 & !y1;
+  _X028  = EXP(!y0 & !y2);
+  _X029  = EXP( y0 &  y2);
+
+-- Node name is 'R23' = '|regn:reg5|:24' 
+-- Equation name is 'R23', type is output 
+ R23     = DFFE( BusWires3 $  GND, GLOBAL( Clock),  VCC,  VCC,  _EQ034);
+  _EQ034 =  _X028 &  _X029 & !y1;
+  _X028  = EXP(!y0 & !y2);
+  _X029  = EXP( y0 &  y2);
+
+-- Node name is 'R24' = '|regn:reg5|:23' 
+-- Equation name is 'R24', type is output 
+ R24     = DFFE( BusWires4 $  GND, GLOBAL( Clock),  VCC,  VCC,  _EQ035);
+  _EQ035 =  _X028 &  _X029 & !y1;
+  _X028  = EXP(!y0 & !y2);
+  _X029  = EXP( y0 &  y2);
+
+-- Node name is 'R25' = '|regn:reg5|:22' 
+-- Equation name is 'R25', type is output 
+ R25     = DFFE( BusWires5 $  GND, GLOBAL( Clock),  VCC,  VCC,  _EQ036);
+  _EQ036 =  _X028 &  _X029 & !y1;
+  _X028  = EXP(!y0 & !y2);
+  _X029  = EXP( y0 &  y2);
+
+-- Node name is 'R26' = '|regn:reg5|:21' 
+-- Equation name is 'R26', type is output 
+ R26     = DFFE( BusWires6 $  GND, GLOBAL( Clock),  VCC,  VCC,  _EQ037);
+  _EQ037 =  _X028 &  _X029 & !y1;
+  _X028  = EXP(!y0 & !y2);
+  _X029  = EXP( y0 &  y2);
+
+-- Node name is 'R27' = '|regn:reg5|:20' 
+-- Equation name is 'R27', type is output 
+ R27     = DFFE( BusWires7 $  GND, GLOBAL( Clock),  VCC,  VCC,  _EQ038);
+  _EQ038 =  _X028 &  _X029 & !y1;
+  _X028  = EXP(!y0 & !y2);
+  _X029  = EXP( y0 &  y2);
+
+-- Node name is 'R30' = '|regn:reg3|:27' 
+-- Equation name is 'R30', type is output 
+ R30     = DFFE( BusWires0 $  GND, GLOBAL( Clock),  VCC,  VCC,  _EQ039);
+  _EQ039 = !y0 &  y1 & !y2;
+
+-- Node name is 'R31' = '|regn:reg3|:26' 
+-- Equation name is 'R31', type is output 
+ R31     = DFFE( BusWires1 $  GND, GLOBAL( Clock),  VCC,  VCC,  _EQ040);
+  _EQ040 = !y0 &  y1 & !y2;
+
+-- Node name is 'R32' = '|regn:reg3|:25' 
+-- Equation name is 'R32', type is output 
+ R32     = DFFE( BusWires2 $  GND, GLOBAL( Clock),  VCC,  VCC,  _EQ041);
+  _EQ041 = !y0 &  y1 & !y2;
+
+-- Node name is 'R33' = '|regn:reg3|:24' 
+-- Equation name is 'R33', type is output 
+ R33     = DFFE( BusWires3 $  GND, GLOBAL( Clock),  VCC,  VCC,  _EQ042);
+  _EQ042 = !y0 &  y1 & !y2;
+
+-- Node name is 'R34' = '|regn:reg3|:23' 
+-- Equation name is 'R34', type is output 
+ R34     = DFFE( BusWires4 $  GND, GLOBAL( Clock),  VCC,  VCC,  _EQ043);
+  _EQ043 = !y0 &  y1 & !y2;
+
+-- Node name is 'R35' = '|regn:reg3|:22' 
+-- Equation name is 'R35', type is output 
+ R35     = DFFE( BusWires5 $  GND, GLOBAL( Clock),  VCC,  VCC,  _EQ044);
+  _EQ044 = !y0 &  y1 & !y2;
+
+-- Node name is 'R36' = '|regn:reg3|:21' 
+-- Equation name is 'R36', type is output 
+ R36     = DFFE( BusWires6 $  GND, GLOBAL( Clock),  VCC,  VCC,  _EQ045);
+  _EQ045 = !y0 &  y1 & !y2;
+
+-- Node name is 'R37' = '|regn:reg3|:20' 
+-- Equation name is 'R37', type is output 
+ R37     = DFFE( BusWires7 $  GND, GLOBAL( Clock),  VCC,  VCC,  _EQ046);
+  _EQ046 = !y0 &  y1 & !y2;
+
+-- Node name is ':114' = 'y0' 
+-- Equation name is 'y0', location is LC095, type is buried.
+y0       = DFFE( _LC082 $  GND, GLOBAL( Clock), GLOBAL( Resetn),  VCC,  VCC);
+
+-- Node name is ':113' = 'y1' 
+-- Equation name is 'y1', location is LC085, type is buried.
+y1       = DFFE( _LC083 $  GND, GLOBAL( Clock), GLOBAL( Resetn),  VCC,  VCC);
+
+-- Node name is ':112' = 'y2' 
+-- Equation name is 'y2', location is LC066, type is buried.
+y2       = DFFE( _LC076 $  GND, GLOBAL( Clock), GLOBAL( Resetn),  VCC,  VCC);
+
+-- Node name is '~108~1' 
+-- Equation name is '~108~1', location is LC076, type is buried.
+-- synthesized logic cell 
+_LC076   = LCELL( _EQ047 $  GND);
+  _EQ047 =  _LC076 &  y0 &  y2
+         #  _LC076 &  y1 &  y2
+         #  y0 &  y1 & !y2
+         #  _LC076 &  y0 &  y1;
+
+-- Node name is '~109~1' 
+-- Equation name is '~109~1', location is LC083, type is buried.
+-- synthesized logic cell 
+_LC083   = LCELL( _EQ048 $  VCC);
+  _EQ048 =  y0 &  y1 & !y2
+         # !_LC083 &  y2
+         # !y0 & !y1
+         # !_LC083 &  y0 &  y1;
+
+-- Node name is '~110~1' 
+-- Equation name is '~110~1', location is LC082, type is buried.
+-- synthesized logic cell 
+_LC082   = LCELL( _EQ049 $  GND);
+  _EQ049 =  _LC082 &  y0 &  y2
+         #  _LC082 & !y0 &  y1
+         #  w & !y0 & !y2
+         # !y0 &  y1 & !y2
+         #  _LC082 &  y1 &  y2;
+
+-- Node name is '~213~1' 
+-- Equation name is '~213~1', location is LC017, type is buried.
+-- synthesized logic cell 
+_LC017   = LCELL( _EQ050 $  GND);
+  _EQ050 =  R27 &  y0 &  y1 & !y2
+         #  R37 & !y0 & !y1 &  y2
+         #  R17 & !y0 &  y1 & !y2
+         #  BusWires7 &  _X030 &  y2
+         #  BusWires7 &  _X031 & !y1;
+  _X030  = EXP(!y0 & !y1);
+  _X031  = EXP(!R37 &  y2);
+
+-- Node name is '~214~1' 
+-- Equation name is '~214~1', location is LC034, type is buried.
+-- synthesized logic cell 
+_LC034   = LCELL( _EQ051 $  GND);
+  _EQ051 =  R26 &  y0 &  y1 & !y2
+         #  R36 & !y0 & !y1 &  y2
+         #  R16 & !y0 &  y1 & !y2
+         #  BusWires6 &  _X030 &  y2
+         #  BusWires6 &  _X032 & !y1;
+  _X030  = EXP(!y0 & !y1);
+  _X032  = EXP(!R36 &  y2);
+
+-- Node name is '~215~1' 
+-- Equation name is '~215~1', location is LC060, type is buried.
+-- synthesized logic cell 
+_LC060   = LCELL( _EQ052 $  GND);
+  _EQ052 =  R25 &  y0 &  y1 & !y2
+         #  R35 & !y0 & !y1 &  y2
+         #  R15 & !y0 &  y1 & !y2
+         #  BusWires5 &  _X030 &  y2
+         #  BusWires5 &  _X033 & !y1;
+  _X030  = EXP(!y0 & !y1);
+  _X033  = EXP(!R35 &  y2);
+
+-- Node name is '~216~1' 
+-- Equation name is '~216~1', location is LC068, type is buried.
+-- synthesized logic cell 
+_LC068   = LCELL( _EQ053 $  GND);
+  _EQ053 =  R24 &  y0 &  y1 & !y2
+         #  R34 & !y0 & !y1 &  y2
+         #  R14 & !y0 &  y1 & !y2
+         #  BusWires4 &  _X030 &  y2
+         #  BusWires4 &  _X034 & !y1;
+  _X030  = EXP(!y0 & !y1);
+  _X034  = EXP(!R34 &  y2);
+
+-- Node name is '~217~1' 
+-- Equation name is '~217~1', location is LC091, type is buried.
+-- synthesized logic cell 
+_LC091   = LCELL( _EQ054 $  GND);
+  _EQ054 =  R23 &  y0 &  y1 & !y2
+         #  R33 & !y0 & !y1 &  y2
+         #  R13 & !y0 &  y1 & !y2
+         #  BusWires3 &  _X030 &  y2
+         #  BusWires3 &  _X035 & !y1;
+  _X030  = EXP(!y0 & !y1);
+  _X035  = EXP(!R33 &  y2);
+
+-- Node name is '~218~1' 
+-- Equation name is '~218~1', location is LC070, type is buried.
+-- synthesized logic cell 
+_LC070   = LCELL( _EQ055 $  GND);
+  _EQ055 =  R22 &  y0 &  y1 & !y2
+         #  R32 & !y0 & !y1 &  y2
+         #  R12 & !y0 &  y1 & !y2
+         #  BusWires2 &  _X030 &  y2
+         #  BusWires2 &  _X036 & !y1;
+  _X030  = EXP(!y0 & !y1);
+  _X036  = EXP(!R32 &  y2);
+
+-- Node name is '~219~1' 
+-- Equation name is '~219~1', location is LC062, type is buried.
+-- synthesized logic cell 
+_LC062   = LCELL( _EQ056 $  GND);
+  _EQ056 =  R21 &  y0 &  y1 & !y2
+         #  R31 & !y0 & !y1 &  y2
+         #  R11 & !y0 &  y1 & !y2
+         #  BusWires1 &  _X030 &  y2
+         #  BusWires1 &  _X037 & !y1;
+  _X030  = EXP(!y0 & !y1);
+  _X037  = EXP(!R31 &  y2);
+
+-- Node name is '~220~1' 
+-- Equation name is '~220~1', location is LC018, type is buried.
+-- synthesized logic cell 
+_LC018   = LCELL( _EQ057 $  GND);
+  _EQ057 =  R20 &  y0 &  y1 & !y2
+         #  R30 & !y0 & !y1 &  y2
+         #  R10 & !y0 &  y1 & !y2
+         #  BusWires0 &  _X030 &  y2
+         #  BusWires0 &  _X038 & !y1;
+  _X030  = EXP(!y0 & !y1);
+  _X038  = EXP(!R30 &  y2);
+
+-- Node name is '~229~1~2' 
+-- Equation name is '~229~1~2', location is LC022, type is buried.
+-- synthesized logic cell 
+_LC022   = LCELL( _EQ058 $  GND);
+  _EQ058 = !Extern & !R17 & !R27 &  _X021 &  _X022 &  _X023 &  _X024 &  _X025 & 
+              y1 & !y2
+         # !BusWires7 & !Extern & !R17 & !R27 & !R37 &  _X021 &  _X022 & 
+              _X023 &  _X024 &  _X025 & !y0 &  y2
+         # !Extern & !R37 &  _X021 &  _X022 &  _X023 &  _X024 &  _X025 & !y0 & 
+             !y1 &  y2;
+  _X021  = EXP(!BusWires7 & !Extern &  y1 &  y2);
+  _X022  = EXP(!BusWires7 & !Extern & !R17 & !R27 & !R37);
+  _X023  = EXP(!BusWires7 & !Extern &  y0 &  y2);
+  _X024  = EXP(!BusWires7 & !Extern & !y1 & !y2);
+  _X025  = EXP(!Data7 &  Extern);
+
+-- Node name is '~230~1~2' 
+-- Equation name is '~230~1~2', location is LC044, type is buried.
+-- synthesized logic cell 
+_LC044   = LCELL( _EQ059 $  GND);
+  _EQ059 = !Extern & !R16 & !R26 &  _X016 &  _X017 &  _X018 &  _X019 &  _X020 & 
+              y1 & !y2
+         # !BusWires6 & !Extern & !R16 & !R26 & !R36 &  _X016 &  _X017 & 
+              _X018 &  _X019 &  _X020 & !y0 &  y2
+         # !Extern & !R36 &  _X016 &  _X017 &  _X018 &  _X019 &  _X020 & !y0 & 
+             !y1 &  y2;
+  _X016  = EXP(!BusWires6 & !Extern &  y1 &  y2);
+  _X017  = EXP(!BusWires6 & !Extern & !R16 & !R26 & !R36);
+  _X018  = EXP(!BusWires6 & !Extern &  y0 &  y2);
+  _X019  = EXP(!BusWires6 & !Extern & !y1 & !y2);
+  _X020  = EXP(!Data6 &  Extern);
+
+-- Node name is '~231~1~2' 
+-- Equation name is '~231~1~2', location is LC050, type is buried.
+-- synthesized logic cell 
+_LC050   = LCELL( _EQ060 $  GND);
+  _EQ060 = !Extern & !R15 & !R25 &  _X011 &  _X012 &  _X013 &  _X014 &  _X015 & 
+              y1 & !y2
+         # !BusWires5 & !Extern & !R15 & !R25 & !R35 &  _X011 &  _X012 & 
+              _X013 &  _X014 &  _X015 & !y0 &  y2
+         # !Extern & !R35 &  _X011 &  _X012 &  _X013 &  _X014 &  _X015 & !y0 & 
+             !y1 &  y2;
+  _X011  = EXP(!BusWires5 & !Extern &  y1 &  y2);
+  _X012  = EXP(!BusWires5 & !Extern & !R15 & !R25 & !R35);
+  _X013  = EXP(!BusWires5 & !Extern &  y0 &  y2);
+  _X014  = EXP(!BusWires5 & !Extern & !y1 & !y2);
+  _X015  = EXP(!Data5 &  Extern);
+
+-- Node name is '~232~1~2' 
+-- Equation name is '~232~1~2', location is LC078, type is buried.
+-- synthesized logic cell 
+_LC078   = LCELL( _EQ061 $  GND);
+  _EQ061 = !Extern & !R14 & !R24 &  _X006 &  _X007 &  _X008 &  _X009 &  _X010 & 
+              y1 & !y2
+         # !BusWires4 & !Extern & !R14 & !R24 & !R34 &  _X006 &  _X007 & 
+              _X008 &  _X009 &  _X010 & !y0 &  y2
+         # !Extern & !R34 &  _X006 &  _X007 &  _X008 &  _X009 &  _X010 & !y0 & 
+             !y1 &  y2;
+  _X006  = EXP(!BusWires4 & !Extern &  y1 &  y2);
+  _X007  = EXP(!BusWires4 & !Extern & !R14 & !R24 & !R34);
+  _X008  = EXP(!BusWires4 & !Extern &  y0 &  y2);
+  _X009  = EXP(!BusWires4 & !Extern & !y1 & !y2);
+  _X010  = EXP(!Data4 &  Extern);
+
+-- Node name is '~233~1~2' 
+-- Equation name is '~233~1~2', location is LC087, type is buried.
+-- synthesized logic cell 
+_LC087   = LCELL( _EQ062 $  GND);
+  _EQ062 = !Extern & !R13 & !R23 &  _X001 &  _X002 &  _X003 &  _X004 &  _X005 & 
+              y1 & !y2
+         # !BusWires3 & !Extern & !R13 & !R23 & !R33 &  _X001 &  _X002 & 
+              _X003 &  _X004 &  _X005 & !y0 &  y2
+         # !Extern & !R33 &  _X001 &  _X002 &  _X003 &  _X004 &  _X005 & !y0 & 
+             !y1 &  y2;
+  _X001  = EXP(!BusWires3 & !Extern &  y1 &  y2);
+  _X002  = EXP(!BusWires3 & !Extern & !R13 & !R23 & !R33);
+  _X003  = EXP(!BusWires3 & !Extern &  y0 &  y2);
+  _X004  = EXP(!BusWires3 & !Extern & !y1 & !y2);
+  _X005  = EXP(!Data3 &  Extern);
+
+-- Node name is '~234~1~2' 
+-- Equation name is '~234~1~2', location is LC074, type is buried.
+-- synthesized logic cell 
+_LC074   = LCELL( _EQ063 $  GND);
+  _EQ063 = !Extern & !_LC079 & !R12 & !R22 &  y1 & !y2
+         # !BusWires2 & !Extern & !_LC079 & !R12 & !R22 & !R32 & !y0 &  y2
+         # !Extern & !_LC079 & !R32 & !y0 & !y1 &  y2;
+
+-- Node name is '~234~1~3' 
+-- Equation name is '~234~1~3', location is LC079, type is buried.
+-- synthesized logic cell 
+_LC079   = LCELL( _EQ064 $  GND);
+  _EQ064 = !BusWires2 & !Extern & !R12 & !R22 & !R32
+         # !BusWires2 & !Extern &  y1 &  y2
+         # !BusWires2 & !Extern &  y0 &  y2
+         # !BusWires2 & !Extern & !y1 & !y2
+         # !Data2 &  Extern;
+
+-- Node name is '~235~1~2' 
+-- Equation name is '~235~1~2', location is LC093, type is buried.
+-- synthesized logic cell 
+_LC093   = LCELL( _EQ065 $  GND);
+  _EQ065 = !Extern & !_LC063 & !R11 & !R21 &  y1 & !y2
+         # !BusWires1 & !Extern & !_LC063 & !R11 & !R21 & !R31 & !y0 &  y2
+         # !Extern & !_LC063 & !R31 & !y0 & !y1 &  y2;
+
+-- Node name is '~235~1~3' 
+-- Equation name is '~235~1~3', location is LC063, type is buried.
+-- synthesized logic cell 
+_LC063   = LCELL( _EQ066 $  GND);
+  _EQ066 = !BusWires1 & !Extern & !R11 & !R21 & !R31
+         # !BusWires1 & !Extern &  y1 &  y2
+         # !BusWires1 & !Extern &  y0 &  y2
+         # !BusWires1 & !Extern & !y1 & !y2
+         # !Data1 &  Extern;
+
+-- Node name is '~236~1~2' 
+-- Equation name is '~236~1~2', location is LC020, type is buried.
+-- synthesized logic cell 
+_LC020   = LCELL( _EQ067 $  GND);
+  _EQ067 = !Extern & !_LC019 & !R10 & !R20 &  y1 & !y2
+         # !BusWires0 & !Extern & !_LC019 & !R10 & !R20 & !R30 & !y0 &  y2
+         # !Extern & !_LC019 & !R30 & !y0 & !y1 &  y2;
+
+-- Node name is '~236~1~3' 
+-- Equation name is '~236~1~3', location is LC019, type is buried.
+-- synthesized logic cell 
+_LC019   = LCELL( _EQ068 $  GND);
+  _EQ068 = !BusWires0 & !Extern & !R10 & !R20 & !R30
+         # !BusWires0 & !Extern &  y1 &  y2
+         # !BusWires0 & !Extern &  y0 &  y2
+         # !BusWires0 & !Extern & !y1 & !y2
+         # !Data0 &  Extern;
+
+
+
+--     Shareable expanders that are duplicated in multiple LABs:
+--    _X026 occurs in LABs C, D, E, F
+--    _X027 occurs in LABs C, D, E, F
+--    _X028 occurs in LABs B, D, E, F
+--    _X029 occurs in LABs B, D, E, F
+--    _X030 occurs in LABs B, C, D, E, F
+
+
+
+
+Project Information                           d:\180905088_d1\week12\swap1.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Standard
+
+   Default Synthesis Style                = NORMAL
+
+      Logic option settings in 'NORMAL' style for 'MAX7000' family
+
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      PARALLEL_EXPANDERS                  = off
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = on
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SOFT_BUFFER_INSERTION               = on
+      SUBFACTOR_EXTRACTION                = on
+      TURBO_BIT                           = on
+      XOR_SYNTHESIS                       = on
+      IGNORE_SOFT_BUFFERS                 = off
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic Fast I/O                  = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      One-Hot State Machine Encoding      = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = on
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interfaces Menu Commands
+------------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:00
+   Database Builder                       00:00:00
+   Logic Synthesizer                      00:00:00
+   Partitioner                            00:00:00
+   Fitter                                 00:00:00
+   Timing SNF Extractor                   00:00:00
+   Assembler                              00:00:00
+   --------------------------             --------
+   Total Time                             00:00:00
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 5,459K

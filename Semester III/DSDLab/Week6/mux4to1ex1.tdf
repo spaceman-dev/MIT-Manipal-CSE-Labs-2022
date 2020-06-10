@@ -1,0 +1,27 @@
+module mux4to1ex4(w0,w1,w2,w3,s0,s1,f);
+input w0,w1,w2,w3;
+input [1:0]s;
+output f;
+reg f;
+function mux2to1ex4(w0,w1,s);
+input w0,w1,s;
+output f;
+reg f;
+always @(w0 or w1 or s)
+begin
+if(s==0)
+mux2to1ex4 = w0;
+else
+mux2to1ex4 = w1;
+end
+endfunction
+always @(w0 or w1 or w2 or w3 or s)
+begin
+case (s[1])
+0:f=mux2to1ex4(w2,w3,s[0]);
+1:f=mux2to1ex4(w0,w1,s[0]);
+endcase
+end
+endmodule
+
+

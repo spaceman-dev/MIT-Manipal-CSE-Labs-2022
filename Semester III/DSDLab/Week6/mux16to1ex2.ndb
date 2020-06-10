@@ -1,0 +1,103 @@
+NDB006
+The number of symbol table entries is: 6
+The length of the symbol table is: 103
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+.	|mux4to1ex2:Mux1|
+@	|mux4to1ex2:Mux2|
+R	|mux4to1ex2:Mux3|
+d	|mux4to1ex2:Mux4|
+v	|mux4to1ex2:Mux5|
+
+The number of name info structs is : 86
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	Nj's	!	4	0	16	f	"%
+#	"?%_n	!	3	0	1	"	s160	!	s160	"$
+$	"?%_n	!	3	0	1	"	s161	!	s161	"#
+%	"?%_n	!	3	0	1	"	s162	!	s162	""
+&	"?%_n	!	3	0	1	"	s163	!	s163	"!
+'	"?%_n	!	2	0	1	"	w0	!	w0	o
+(	"?%_n	!	2	0	1	"	w1	!	w1	p
+)	"?%_n	!	2	0	1	"	w10	!	w10	y
+*	"?%_n	!	2	0	1	"	w11	!	w11	z
++	"?%_n	!	2	0	1	"	w12	!	w12	{
+,	"?%_n	!	2	0	1	"	w13	!	w13	|
+-	"?%_n	!	2	0	1	"	w14	!	w14	}
+.	"?%_n	!	2	0	1	"	w15	!	w15	~
+/	"?%_n	!	2	0	1	"	w2	!	w2	q
+0	"?%_n	!	2	0	1	"	w3	!	w3	r
+1	"?%_n	!	2	0	1	"	w4	!	w4	s
+2	"?%_n	!	2	0	1	"	w5	!	w5	t
+3	"?%_n	!	2	0	1	"	w6	!	w6	u
+4	"?%_n	!	2	0	1	"	w7	!	w7	v
+5	"?%_n	!	2	0	1	"	w8	!	w8	w
+6	"?%_n	!	2	0	1	"	w9	!	w9	x
+7	IeEA	.	16	0	:10	"^
+8	IeEA	.	16	0	:11	"_
+9	IeEA	.	16	0	:12	"`
+:	IeEA	.	16	0	:13	"a
+;	IeEA	.	16	0	:14	"b
+<	IeEA	.	16	0	:15	"c
+=	IeEA	.	16	0	:16	"d
+>	IeEA	.	16	0	:17	"e
+?	IeEA	.	16	0	:18	"f
+@	IeEA	.	16	0	:19	"g
+A	IeEA	.	16	0	:20	"h
+B	IeEA	.	16	0	:8	"\
+C	IeEA	.	16	0	:9	"]
+D	IeEA	@	16	0	:10	"w
+E	IeEA	@	16	0	:11	"x
+F	IeEA	@	16	0	:12	"y
+G	IeEA	@	16	0	:13	"z
+H	IeEA	@	16	0	:14	"{
+I	IeEA	@	16	0	:15	"|
+J	IeEA	@	16	0	:16	"}
+K	IeEA	@	16	0	:17	"~
+L	IeEA	@	16	0	:18	#!
+M	IeEA	@	16	0	:19	#"
+N	IeEA	@	16	0	:20	##
+O	IeEA	@	16	0	:8	"u
+P	IeEA	@	16	0	:9	"v
+Q	IeEA	R	16	0	:10	#1
+R	IeEA	R	16	0	:11	#2
+S	IeEA	R	16	0	:12	#3
+T	IeEA	R	16	0	:13	#4
+U	IeEA	R	16	0	:14	#5
+V	IeEA	R	16	0	:15	#6
+W	IeEA	R	16	0	:16	#7
+X	IeEA	R	16	0	:17	#8
+Y	IeEA	R	16	0	:18	#9
+Z	IeEA	R	16	0	:19	#:
+[	IeEA	R	16	0	:20	#;
+\	IeEA	R	16	0	:8	#/
+]	IeEA	R	16	0	:9	#0
+^	IeEA	d	16	0	:10	#I
+_	IeEA	d	16	0	:11	#J
+`	IeEA	d	16	0	:12	#K
+a	IeEA	d	16	0	:13	#L
+b	IeEA	d	16	0	:14	#M
+c	IeEA	d	16	0	:15	#N
+d	IeEA	d	16	0	:16	#O
+e	IeEA	d	16	0	:17	#P
+f	IeEA	d	16	0	:18	#Q
+g	IeEA	d	16	0	:19	#R
+h	IeEA	d	16	0	:20	#S
+i	IeEA	d	16	0	:8	#G
+j	IeEA	d	16	0	:9	#H
+k	IeEA	v	16	0	:10	#a
+l	IeEA	v	16	0	:11	#b
+m	IeEA	v	16	0	:12	#c
+n	IeEA	v	16	0	:13	#d
+o	IeEA	v	16	0	:14	#e
+p	IeEA	v	16	0	:15	#f
+q	IeEA	v	16	0	:16	#g
+r	IeEA	v	16	0	:17	#h
+s	IeEA	v	16	0	:18	#i
+t	IeEA	v	16	0	:19	#j
+u	IeEA	v	16	0	:20	#k
+v	IeEA	v	16	0	:8	#_
+w	IeEA	v	16	0	:9	#`

@@ -1,0 +1,118 @@
+-- MAX+plus II Compiler Fit File      
+-- Version 10.2 07/10/2002            
+-- Compiled: 08/14/2019 18:18:59      
+
+-- Copyright (C) 1988-2002 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+CHIP "bcdadder"
+BEGIN
+
+    DEVICE = "EPM7032LC44-6";
+
+    "a0"                           : INPUT_PIN  = 4      ; -- LC1
+    "a1"                           : INPUT_PIN  = 13     ; -- LC9
+    "a2"                           : INPUT_PIN  = 18     ; -- LC13
+    "a3"                           : INPUT_PIN  = 11     ; -- LC7
+    "b0"                           : INPUT_PIN  = 16     ; -- LC11
+    "b1"                           : INPUT_PIN  = 8      ; -- LC5
+    "b2"                           : INPUT_PIN  = 7      ; -- LC4
+    "b3"                           : INPUT_PIN  = 6      ; -- LC3
+    "cin"                          : INPUT_PIN  = 5      ; -- LC2
+    "cout"                         : OUTPUT_PIN = 28     ; -- LC28
+    "sum0"                         : OUTPUT_PIN = 14     ; -- LC10
+    "sum1"                         : OUTPUT_PIN = 38     ; -- LC20
+    "sum2"                         : OUTPUT_PIN = 31     ; -- LC26
+    "sum3"                         : OUTPUT_PIN = 29     ; -- LC27
+    "|fulladd:stage00|~13~1"       : LOCATION   = LC3    ; -- PIN 6
+    "|fulladd:stage1|~7~1"         : LOCATION   = LC5    ; -- PIN 8
+    "|fulladd:stage1|~13~1"        : LOCATION   = LC6    ; -- PIN 9
+    "|fulladd:stage2|~7~1"         : LOCATION   = LC7    ; -- PIN 11
+    "|fulladd:stage2|~7~2"         : LOCATION   = LC13   ; -- PIN 18
+    "|fulladd:stage2|~7~3"         : LOCATION   = LC14   ; -- PIN 19
+    "|fulladd:stage2|~7~4"         : LOCATION   = LC29   ; -- PIN 27
+    "|fulladd:stage3|~7~1"         : LOCATION   = LC15   ; -- PIN 20
+    "|fulladd:stage3|~7~2"         : LOCATION   = LC9    ; -- PIN 13
+    "|fulladd:stage3|~7~3"         : LOCATION   = LC30   ; -- PIN 26
+    "|fulladd:stage3|~7~4"         : LOCATION   = LC31   ; -- PIN 25
+    "|fulladd:stage3|~7~5"         : LOCATION   = LC32   ; -- PIN 24
+    "|fulladd:stage3|~7~6"         : LOCATION   = LC11   ; -- PIN 16
+    "|fulladd:stage3|~7~7"         : LOCATION   = LC16   ; -- PIN 21
+    "|fulladd:stage3|~10~1"        : LOCATION   = LC12   ; -- PIN 17
+    "|fulladd:stage3|~12~1"        : LOCATION   = LC8    ; -- PIN 12
+    "|fulladd:stage3|~14~1"        : LOCATION   = LC21   ; -- PIN 37
+    "|fulladd:stage11|~9~1"        : LOCATION   = LC19   ; -- PIN 39
+    "|fulladd:stage11|~9~2"        : LOCATION   = LC2    ; -- PIN 5
+    "|fulladd:stage11|~9~3"        : LOCATION   = LC1    ; -- PIN 4
+    "|fulladd:stage11|~12~1"       : LOCATION   = LC18   ; -- PIN 40
+    "|fulladd:stage11|~12~2"       : LOCATION   = LC17   ; -- PIN 41
+    "|fulladd:stage22|~13~1"       : LOCATION   = LC4    ; -- PIN 7
+    "|fulladd:stage22|~13~2"       : LOCATION   = LC22   ; -- PIN 36
+    "|fulladd:stage22|~13~3"       : LOCATION   = LC23   ; -- PIN 34
+    "|fulladd:stage22|~13~4"       : LOCATION   = LC24   ; -- PIN 33
+    "|fulladd:stage22|~13~5"       : LOCATION   = LC25   ; -- PIN 32
+
+END;
+
+INTERNAL_INFO "bcdadder"
+BEGIN
+	DEVICE = EPM7032LC44-6;
+	LC27    : LORAX = "G40R0";
+	LC26    : LORAX = "G39R0";
+	LC20    : LORAX = "G16R0";
+	LC10    : LORAX = "G35R0";
+	LC28    : LORAX = "G41R0";
+	LC15    : LORAX = "G53R0,PA33R0C1";
+	OH12R0P18 : LORAX = "G17R0,PA17R0C0,PA17R0C1";
+	OH8R0P13 : LORAX = "G0R0,PA6R0C0,PA8R0C1";
+	OH0R0P4 : LORAX = "G43R0,PA20R0C1,PA20R0C0";
+	OH2R0P6 : LORAX = "G45R0,PA22R0C1,PA22R0C0";
+	OH10R0P16 : LORAX = "G2R0,PA0R0C0,PA0R0C1";
+	OH1R0P5 : LORAX = "G44R0,PA19R0C1,PA21R0C0";
+	OH4R0P8 : LORAX = "G60R0,PA32R0C0,PA32R0C1";
+	OH3R0P7 : LORAX = "G46R0,PA24R0C1,PA24R0C0";
+	OH6R0P11 : LORAX = "G62R0,PA31R0C1,PA34R0C0";
+	LC4     : LORAX = "G12R0,PA5R0C1";
+	LC5     : LORAX = "G26R0,PA11R0C1";
+	LC6     : LORAX = "G27R0,PA10R0C1";
+	LC3     : LORAX = "G11R0,PA3R0C1";
+	LC18    : LORAX = "G14R0,PA6R0C1";
+	LC7     : LORAX = "G28R0,PA12R0C1";
+	LC12    : LORAX = "G37R0,PA26R0C1";
+	LC8     : LORAX = "G29R0,PA9R0C1";
+	LC21    : LORAX = "G30R0,PA16R0C1";
+	LC19    : LORAX = "G15R0,PA4R0C1";
+	LC9     : LORAX = "G34R0,PA19R0C0";
+	LC30    : LORAX = "G56R0,PA30R0C0";
+	LC31    : LORAX = "G57R0,PA33R0C0";
+	LC22    : LORAX = "G31R0,PA14R0C0";
+	LC32    : LORAX = "G58R0,PA29R0C0";
+	LC13    : LORAX = "G51R0,PA28R0C0";
+	LC23    : LORAX = "G32R0,PA12R0C0";
+	LC11    : LORAX = "G36R0,PA23R0C0";
+	LC14    : LORAX = "G52R0,PA31R0C0";
+	LC24    : LORAX = "G33R0,PA10R0C0";
+	LC2     : LORAX = "G10R0,PA1R0C1";
+	LC17    : LORAX = "G13R0,PA7R0C1";
+	LC16    : LORAX = "G54R0,PA35R0C0";
+	LC29    : LORAX = "G55R0,PA27R0C0";
+	LC25    : LORAX = "G38R0,PA18R0C0";
+	LC1     : LORAX = "G9R0,PA2R0C1";
+END;

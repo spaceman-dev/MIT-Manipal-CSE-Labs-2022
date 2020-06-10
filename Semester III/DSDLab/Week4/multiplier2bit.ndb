@@ -1,0 +1,62 @@
+NDB006
+The number of symbol table entries is: 3
+The length of the symbol table is: 47
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+.	|fulladd:stage0|
+?	|fulladd:stage1|
+
+The number of name info structs is : 48
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	IeEA	!	8	0	:11	y
+#	IeEA	!	8	0	:12	z
+$	IeEA	!	8	0	:13	{
+%	IeEA	!	8	0	:14	|
+&	IeEA	!	8	0	:15	}
+'	IeEA	!	9	0	:16	~
+(	IeEA	!	9	0	:17	"!
+)	IeEA	!	9	0	:18	""
+*	IeEA	!	10	0	:19	"#
++	IeEA	!	10	0	:20	"$
+,	IeEA	!	11	0	:21	"%
+-	IeEA	!	11	0	:22	"&
+.	IeEA	!	11	0	:23	"'
+/	IeEA	!	12	0	:24	"(
+0	IeEA	!	12	0	:25	")
+1	IeEA	!	12	0	:26	"*
+2	IeEA	!	15	0	:27	"+
+3	IeEA	!	15	0	:28	",
+4	IeEA	!	15	0	:29	"-
+5	IeEA	!	15	0	:30	".
+6	"?%_n	!	2	0	5	;	<	=	>	?	a0	!	a0	p
+7	"?%_n	!	2	0	4	;	=	>	?	a1	!	a1	o
+8	"?%_n	!	2	0	5	;	<	=	>	?	b0	!	b0	r
+9	"?%_n	!	2	0	4	;	=	>	?	b1	!	b1	q
+:	L8ef	!	3	0	4	;	=	>	?	Cin	s
+;	IeE[	!	5	0	Cout	x
+<	"<R?c	!	4	0	p0	!	p0	w
+=	"AW!{	!	4	0	1	p1	!	p1	v
+>	"AW!{	!	4	0	1	p2	!	p2	u
+?	"<R?c	!	4	0	p3	!	p3	t
+@	IeEA	.	22	0	:10	"L
+A	IeEA	.	22	0	:11	"M
+B	IeEA	.	22	0	:12	"N
+C	IeEA	.	22	0	:13	"O
+D	IeEA	.	22	0	:14	"P
+E	IeEA	.	21	0	:6	"H
+F	IeEA	.	21	0	:7	"I
+G	IeEA	.	21	0	:8	"J
+H	IeEA	.	22	0	:9	"K
+I	IeEA	?	22	0	:10	"_
+J	IeEA	?	22	0	:11	"`
+K	IeEA	?	22	0	:12	"a
+L	IeEA	?	22	0	:13	"b
+M	IeEA	?	22	0	:14	"c
+N	IeEA	?	21	0	:6	"[
+O	IeEA	?	21	0	:7	"\
+P	IeEA	?	21	0	:8	"]
+Q	IeEA	?	22	0	:9	"^

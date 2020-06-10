@@ -1,0 +1,99 @@
+-- Copyright (C) 1988-2002 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+----------------------------------------------------------------------------
+
+CHIP "proc_mux" ASSIGNED TO AN EPM7096LC68-7
+GND                              : 1
+GND                              : 2
+VCCINT                           : 3
+Ry1                              : 4
+w                                : 5
+GND                              : 6
+F1                               : 7
+F0                               : 8
+Data0                            : 9
+Data3                            : 10
+VCCIO                            : 11
+Data2                            : 12
+Data1                            : 13
+R30                              : 14
+R10                              : 15
+GND                              : 16
+R00                              : 17
+R20                              : 18
+Reset                            : 19
+Rx0                              : 20
+VCCIO                            : 21
+Rx1                              : 22
+Ry0                              : 23
+RESERVED                         : 24
+RESERVED                         : 25
+GND                              : 26
+RESERVED                         : 27
+R21                              : 28
+R11                              : 29
+R31                              : 30
+VCCIO                            : 31
+R01                              : 32
+RESERVED                         : 33
+GND                              : 34
+VCCINT                           : 35
+Count1                           : 36
+R33                              : 37
+GND                              : 38
+BusWires3                        : 39
+Count0                           : 40
+R03                              : 41
+R23                              : 42
+VCCIO                            : 43
+RESERVED                         : 44
+R13                              : 45
+I0                               : 46
+R02                              : 47
+GND                              : 48
+I1                               : 49
+R12                              : 50
+R32                              : 51
+R22                              : 52
+VCCIO                            : 53
+RESERVED                         : 54
+BusWires2                        : 55
+RESERVED                         : 56
+RESERVED                         : 57
+GND                              : 58
+RESERVED                         : 59
+BusWires0                        : 60
+RESERVED                         : 61
+BusWires1                        : 62
+VCCIO                            : 63
+RESERVED                         : 64
+RESERVED                         : 65
+GND                              : 66
+Clock                            : 67
+GND                              : 68

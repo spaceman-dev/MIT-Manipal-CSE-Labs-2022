@@ -1,0 +1,100 @@
+NDB006
+The number of symbol table entries is: 5
+The length of the symbol table is: 149
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+.	|adder4bit:stage0|fulladd:stage0|
+P	|adder4bit:stage0|fulladd:stage1|
+r	|adder4bit:stage0|fulladd:stage2|
+"6	|adder4bit:stage0|fulladd:stage3|
+
+The number of name info structs is : 84
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	IeEA	!	8	0	:15	}
+#	IeEA	!	8	0	:16	~
+$	IeEA	!	8	0	:17	"!
+%	IeEA	!	8	0	:18	""
+&	IeEA	!	8	0	:19	"#
+'	IeEA	!	9	0	:20	"$
+(	IeEA	!	9	0	:21	"%
+)	IeEA	!	9	0	:22	"&
+*	IeEA	!	9	0	:23	"'
++	IeEA	!	9	0	:24	"(
+,	IeEA	!	10	0	:25	")
+-	IeEA	!	10	0	:26	"*
+.	IeEA	!	10	0	:27	"+
+/	IeEA	!	10	0	:28	",
+0	IeEA	!	10	0	:29	"-
+1	IeEA	!	11	0	:30	".
+2	IeEA	!	11	0	:31	"/
+3	IeEA	!	11	0	:32	"0
+4	IeEA	!	11	0	:33	"1
+5	IeEA	!	11	0	:34	"2
+6	L8ef	!	2	0	16	V	`	a	r	s	t	u	k	l	n	o	p	q	7	:	;	Cin	o
+7	Nj's	!	4	0	1	Cout	|
+8	"<R?c	!	5	0	s0	!	s0	{
+9	"AW!{	!	5	0	1	s1	!	s1	z
+:	"AW!{	!	5	0	2	s2	!	s2	y
+;	"AW!{	!	5	0	2	s3	!	s3	x
+<	"?%_n	!	3	0	12	V	`	r	s	t	k	m	n	o	p	7	8	x0	!	x0	s
+=	"?%_n	!	3	0	14	V	`	r	s	t	k	l	m	n	o	p	7	9	:	x1	!	x1	r
+>	"?%_n	!	3	0	13	a	r	s	t	k	l	m	n	o	p	q	7	;	x2	!	x2	q
+?	"?%_n	!	3	0	8	u	k	l	m	n	p	q	7	x3	!	x3	p
+@	"?%_n	!	3	0	14	V	`	r	s	t	k	l	m	n	o	7	8	9	:	y0	!	y0	w
+A	"?%_n	!	3	0	14	V	`	r	s	t	k	l	m	n	o	p	7	9	:	y1	!	y1	v
+B	"?%_n	!	3	0	12	a	r	s	t	k	m	n	o	p	q	7	;	y2	!	y2	u
+C	"?%_n	!	3	0	9	u	k	l	m	n	o	p	q	7	y3	!	y3	t
+D	IeEA	.	32	0	:10	##
+E	IeEA	.	32	0	:11	#$
+F	IeEA	.	32	0	:12	#%
+G	IeEA	.	32	0	:13	#&
+H	IeEA	.	32	0	:14	#'
+I	IeEA	.	31	0	:6	"}
+J	IeEA	.	31	0	:7	"~
+K	IeEA	.	31	0	:8	#!
+L	IeEA	.	32	0	:9	#"
+M	IeEA	P	32	0	:10	#6
+N	IeEA	P	32	0	:11	#7
+O	IeEA	P	32	0	:12	#8
+P	IeEA	P	32	0	:13	#9
+Q	IeEA	P	32	0	:14	#:
+R	IeEA	P	31	0	:6	#2
+S	IeEA	P	31	0	:7	#3
+T	IeEA	P	31	0	:8	#4
+U	IeEA	P	32	0	:9	#5
+V	Q<Im	P	31	0	1	9	1	~8~1	'J
+W	IeEA	r	32	0	:10	#H
+X	IeEA	r	32	0	:11	#I
+Y	IeEA	r	32	0	:12	#J
+Z	IeEA	r	32	0	:13	#K
+[	IeEA	r	32	0	:14	#L
+\	IeEA	r	31	0	:6	#D
+]	IeEA	r	31	0	:7	#E
+^	IeEA	r	31	0	:8	#F
+_	IeEA	r	32	0	:9	#G
+`	Q<Im	r	31	0	1	:	1	~8~1	'B
+a	L7gU	r	31	0	1	:	~8~2	'N
+b	IeEA	"6	32	0	:10	#Z
+c	IeEA	"6	32	0	:11	#[
+d	IeEA	"6	32	0	:12	#\
+e	IeEA	"6	32	0	:13	#]
+f	IeEA	"6	32	0	:14	#^
+g	IeEA	"6	31	0	:6	#V
+h	IeEA	"6	31	0	:7	#W
+i	IeEA	"6	31	0	:8	#X
+j	IeEA	"6	32	0	:9	#Y
+k	Q<Im	"6	32	0	1	7	1	~14~1	'&
+l	Q<Im	"6	32	0	1	7	1	~14~2	'*
+m	Q<Im	"6	32	0	1	7	1	~14~3	'.
+n	Q<Im	"6	32	0	1	7	1	~14~4	'2
+o	Q<Im	"6	32	0	1	7	1	~14~5	'6
+p	Q<Im	"6	32	0	1	7	1	~14~6	'>
+q	L7gU	"6	32	0	1	7	~14~7	'V
+r	Q<Im	"6	31	0	1	;	1	~8~1	'"
+s	Q<Im	"6	31	0	1	;	1	~8~2	':
+t	Q<Im	"6	31	0	1	;	1	~8~3	'F
+u	L7gU	"6	31	0	1	;	~8~4	'R
