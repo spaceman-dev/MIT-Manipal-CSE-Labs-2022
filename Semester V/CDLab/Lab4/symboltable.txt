@@ -1,0 +1,23 @@
+1 sum int func -1
+2 a int id 4
+3 b int id 4
+4 s int id 4
+
+==x==x==x===x==
+1 bool int id 4
+2 rr int id 4
+3 key int id 4
+4 i int id 4
+5 arr int id 0
+
+==x==x==x===x==
+1 main void func -1
+2 a int id 80
+3 i int id 4
+4 res int id 4
+5 bool int id 4
+6 sum int func -1
+7 status int id 4
+8 search int func -1
+
+==x==x==x===x==

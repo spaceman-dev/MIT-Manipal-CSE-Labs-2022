@@ -1,0 +1,3 @@
+dpkg -l
+or 
+apt list
