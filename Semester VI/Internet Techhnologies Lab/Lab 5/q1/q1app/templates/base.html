@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Create Form</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function process_form() {
+            var n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+            var n3 = document.getElementById("num3").value;
+            var n4 = document.getElementById("num4").value;
+            var english = document.getElementById("num5").value;
+            var physics = document.getElementById("num6").value;
+            var chemistry = document.getElementById("num7").value;
+            var total = parseInt(english) + parseInt(physics) + parseInt(chemistry);
+            document.getElementById("num8").value = n1 + "\n" + n2 + "\n" + n3 + "\n" + n4 + "\n" + english + "\n" + physics + "\n" + chemistry + "\n" + "total: " + total;
+
+            var total_percentage = parseFloat((total / 300));
+            
+            document.getElementById("total_percentage").value = total_percentage * 100;
+        }
+    </script>
+
+    Enter Name: <input type="text" id="num1"><br><br>
+    Enter Address: <input type="text" id="num2"><br><br>
+    Enter DOB: <input type="text" id="num3"><br><br>
+    Enter contact no.: <input type="number" id="num4"><br><br>
+    Marks English: <input type="number" id="num5"><br><br>
+    Marks Physics: <input type="number" id="num6"><br><br>
+    Enter Chemistry: <input type="number" id="num7"><br><br>
+
+    <button onclick="process_form()">Submit</button>
+    <br><br>
+
+    <hr>
+
+    Total Percentage: <input type="text" id="total_percentage"><br><br>
+    <label for="total_percentage" id="label_total_percentage"></label>
+
+    <textarea id="num8" name="myarea" rows="10" cols="60">
+
+</textarea>
+</body>
+
+</html>

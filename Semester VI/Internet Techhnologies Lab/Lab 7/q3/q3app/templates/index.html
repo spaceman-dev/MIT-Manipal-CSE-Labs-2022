@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7 Question 3</title>
+    <style>
+ul li {
+  background: #cce5ff;
+  margin: 5px;
+}
+ul {
+  background: #3399ff;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+<ul>
+    <li><a href="{% url 'publisherEntry' %}">Register Publisher</a></li>
+    <li><a href="{% url 'authorEntry' %}">Register Author</a></li>
+    <li><a href="{% url 'bookEntry' %}">Register Book</a></li>
+    <li><a href="{% url 'searchBook' %}">Search Book</a></li>
+    <li><a href="{% url 'searchAuthor' %}">Search Author</a></li>
+    <li><a href="{% url 'searchPublisher' %}">Search Publisher</a></li>
+</body>
+</html>

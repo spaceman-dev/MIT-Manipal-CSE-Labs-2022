@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Home</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <form action="eligible">
+      <label for="items">choose an id:</label>
+      <select id="items" name="emid">
+        <option value="item1">1</option>
+        <option value="item2">2</option>
+        <option value="item3">3</option>
+        <option value="item4">4</option>
+        <option value="item5">5</option>
+      </select>
+      <br />
+      <label for="doj">Enter the Date of Joining:</label>
+      <input type="date" id="doj" name="doj" /><br />
+      <input type="submit" value="Am I Eligible for Promotion?" /><br />
+    </form>
+    <script src="" async defer></script>
+    {% block eligible %}
+    {% endblock eligible %}
+  </body>
+</html>

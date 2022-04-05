@@ -1,0 +1,33 @@
+{%load static %}
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Captcha</title>
+</head>
+<body>
+<script>
+var count = 0;
+function validate(){
+var c = document.getElementById('inp').value;
+if(c=='ABCD'){
+document.getElementById('smg').innerHTML = "Captcha Correct!";
+}
+else if(count<3){
+count+=1;
+}
+else{
+document.getElementById('inp').disabled = true;
+document.getElementById('smg').innerHTML = 'you exceeded the maximum number of attempts';
+}
+}
+</script>
+<img src="{% static 'images/captcha.png' %}" alt="captcha" style="height:
+80px;"><br>
+<textarea name="inp" id="inp" cols="20" rows="1" style="font-size:
+18px;"></textarea><br>
+<button onclick="validate()">submit</button><br>
+<p id="smg"></p>
+</body>
+</html>

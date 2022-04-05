@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7 Question 2 Search</title>
+        <style>
+     tr:nth-child(odd) {background-color: #f2f2f2;} 
+     th {
+  background-color: #04AA6D;
+  color: white;
+}
+table, th, td {
+  border: 1px solid black;
+}
+    </style>
+</head>
+<body>
+    <form action="search" method="POST">
+        {% csrf_token %}
+        {{form}}
+        <br>
+        <input type="submit" value="search">
+    </form><br>
+    <table>
+        <thead>
+            <td>Name</td>
+            <td>City</td>
+        </thead>
+        {% for employee in employees %}
+        <tr>
+            <td>{{employee.Name}}</td>
+            <td>{{employee.City}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <button><a href="{% url 'index' %}">Back</a></button>
+</body>
+</html> 
